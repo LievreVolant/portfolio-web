@@ -1,0 +1,18 @@
+.div-book {
+    position: relative;
+    height: var(--book-cover-height);
+    width: calc(var(--book-cover-width) * 2);
+}
+
+.svg-book {
+    position: absolute;
+    z-index: 0;
+}
+
+.div-text-onbook{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+    padding: 1px;
+}

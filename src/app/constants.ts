@@ -1,0 +1,4 @@
+export const BOOK_COVER_WIDTH = 710;
+export const BOOK_COVER_HEIGHT = 865;
+export const BOOK_PAGE_WIDTH = BOOK_COVER_WIDTH - 30;
+export const BOOK_PAGE_HEIGHT = BOOK_COVER_HEIGHT - 50;

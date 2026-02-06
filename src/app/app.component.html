@@ -1,0 +1,11 @@
+<main>
+    <div class="centered">
+        @if (this.activeUrl === '/') {
+            <app-book-closed nextPath="/summary"/>
+        } @else if (this.activeUrl === '/back-cover') {
+            <app-book-closed prevPath="/contact"/>
+        } @else {
+            <app-book-open/>
+        }
+    </div>
+</main>

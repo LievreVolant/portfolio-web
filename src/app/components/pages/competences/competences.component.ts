@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import {PageCornersComponent} from '../../shared/page-corners/page-corners.component';
 
 @Component({
-  selector: 'app-presentation',
+  selector: 'app-competences',
     imports: [
         PageCornersComponent
     ],
-  templateUrl: './presentation.component.html',
-  styleUrl: './presentation.component.scss'
+  templateUrl: './competences.component.html',
+  styleUrl: './competences.component.scss'
 })
-export class PresentationComponent {
+export class CompetencesComponent {
 
 }

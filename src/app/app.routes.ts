@@ -4,9 +4,15 @@ import {PresentationComponent} from './components/pages/presentation/presentatio
 import {ContactComponent} from './components/pages/contact/contact.component';
 import {FrontCoverComponent} from './components/pages/front-cover/front-cover.component';
 import {BackCoverComponent} from './components/pages/back-cover/back-cover.component';
-import {FavoriteProjectsComponent} from './components/pages/favorite-projects/favorite-projects.component';
 import {AllProjectsComponent} from './components/pages/all-projects/all-projects.component';
-import {RecentProjectsComponent} from './components/pages/recent-projects/recent-projects.component';
+import {PassionsComponent} from './components/pages/passions/passions.component';
+import {PassionsBisComponent} from './components/pages/passions-bis/passions-bis.component';
+import {CompetencesComponent} from './components/pages/competences/competences.component';
+import {TheShadowWitchComponent} from './components/pages/favorite-projects/the-shadow-witch/the-shadow-witch.component';
+import {PortfolioComponent} from './components/pages/favorite-projects/portfolio/portfolio.component';
+import {DeusExMachinaComponent} from './components/pages/favorite-projects/deus-ex-machina/deus-ex-machina.component';
+import {ProjectTemplateComponent} from './components/pages/project-template/project-template.component';
+import {FavoriteProjectsComponent} from './components/pages/favorite-projects/favorite-projects.component';
 
 export const routes: Routes = [
     {
@@ -18,25 +24,44 @@ export const routes: Routes = [
         component: SummaryComponent,
     },
     {
-        path: 'presentation/:page',
-        component: PresentationComponent,
+        path: 'presentation',
+        component: PresentationComponent
     },
     {
-        path: 'projects',
-            children: [
-                {
-                    path: 'favorite',
-                    component: FavoriteProjectsComponent,
-                },
-                {
-                    path: 'recent',
-                    component: RecentProjectsComponent,
-                },
-                {
-                    path: 'all/:projectId',
-                    component: AllProjectsComponent,
-                },
-            ],
+        path: 'presentation/competences',
+        component: CompetencesComponent,
+    },
+    {
+        path: 'presentation/passions/1',
+        component: PassionsComponent,
+    },
+    {
+        path: 'presentation/passions/2',
+        component: PassionsBisComponent,
+    },
+    {
+        path: 'projects/favorite',
+        component: FavoriteProjectsComponent,
+    },
+    {
+        path: 'projects/favorite/1',
+        component: TheShadowWitchComponent,
+    },
+    {
+        path: 'projects/favorite/2',
+        component: PortfolioComponent,
+    },
+    {
+        path: 'projects/favorite/3',
+        component: DeusExMachinaComponent,
+    },
+    {
+        path: 'projects/all',
+        component: AllProjectsComponent,
+    },
+    {
+        path: 'projects/all/:projectId',
+        component: ProjectTemplateComponent,
     },
     {
         path: 'contact',
