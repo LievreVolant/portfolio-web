@@ -1,1 +1,43 @@
-<p>open-book.component works!</p>
+<div class="div-book">
+    @if (bookCoverWidth && bookCoverHeight) {
+        <svg class="svg-book"
+             [attr.width]="bookCoverWidth * 2"
+             [attr.height]="bookCoverHeight">
+            <!--   Book Cover     -->
+            <rect [attr.width]="120"
+                  [attr.height]="bookCoverHeight-5"
+                  [attr.x]="bookCoverWidth-70" y="0"
+                  rx="25" ry="15"
+                  [attr.fill]="'var(--color-1)'"/>
+            <rect [attr.width]="bookCoverWidth - 20"
+                  [attr.height]="bookCoverHeight - 20"
+                  x="0" y="0"
+                  rx="5" ry="5"
+                  [attr.fill]="'var(--color-1)'"/>
+            <rect [attr.width]="bookCoverWidth - 20"
+                  [attr.height]="bookCoverHeight - 20"
+                  [attr.x]="bookCoverWidth" y="0"
+                  rx="5" ry="5"
+                  [attr.fill]="'var(--color-1)'"/>
+            <!--   Pages     -->
+            <rect [attr.width]="bookPageWidth"
+                  [attr.height]="bookPageHeight"
+                  x="20" y="13"
+                  rx="5" ry="5"
+                  [attr.fill]="'var(--white)'"/>
+            <rect [attr.width]="bookPageWidth"
+                  [attr.height]="bookPageHeight"
+                  [attr.x]="bookCoverWidth-10" y="13"
+                  rx="5" ry="5"
+                  [attr.fill]="'var(--white)'"/>
+            <rect [attr.width]="10"
+                  [attr.height]="bookCoverHeight - 15"
+                  [attr.x]="bookCoverWidth-15" y="0"
+                  rx="5" ry="5"
+                  [attr.fill]="'var(--color-1)'"/>
+        </svg>
+    }
+    <div class="div-text-onbook">
+        <router-outlet/>
+    </div>
+</div>

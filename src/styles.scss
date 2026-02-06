@@ -1,3 +1,76 @@
+$color-1: #0B1E38;
+$color-2: #173679;
+$color-3: #4888C8;
+$color-4: #7FC5DC;
+$color-5: #E8E163;
+$color-6: #DB901C;
+$white: #FFFDFA;
+$grey: #D9D9D9;
+$black: #464646;
+
+$book-cover-width: 710px;
+$book-cover-height: 865px;
+$book-page-width: $book-cover-width - 30px;
+$book-page-height: $book-cover-height - 50px;
+
+:root {
+    --color-1: #{$color-1};
+    --color-2: #{$color-2};
+    --color-3: #{$color-3};
+    --color-4: #{$color-4};
+    --color-5: #{$color-5};
+    --color-6: #{$color-6};
+    --white: #{$white};
+    --grey: #{$grey};
+    --black: #{$black};
+
+    --book-cover-width: #{$book-cover-width};
+    --book-cover-height: #{$book-cover-height};
+    --book-page-width: #{$book-page-width};
+    --book-page-height: #{$book-page-height};
+}
+
 html {
-    background-image: url("assets/starry_night.png");
+    background-size: cover;
+    background-image: url("assets/images/starry_night.png");
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, p {
+    color: $black;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0 0 0.75rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+p {
+    font-size: 1rem;
+}
+
+.alinea {
+    padding: 0 50px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.div-page {
+    display: flex;
+    position: relative;
+    width: $book-page-width * 2;
+    height: $book-page-height;
+    margin: 12px 0 0 19px;
+}
+.div-left-page, .div-right-page {
+    width: $book-page-width - 75;
+    height: $book-page-height - 85;
+    margin: 60px 55px 60px 55px;
 }
