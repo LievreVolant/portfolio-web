@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {Router} from '@angular/router';
-import {BOOK_COVER_HEIGHT, BOOK_COVER_WIDTH} from '../../../constants';
+import {BOOK_COVER_HEIGHT, BOOK_COVER_WIDTH, BOOK_PAGE_WIDTH} from '../../../constants';
 
 @Component({
   selector: 'app-book-closed',
@@ -24,4 +24,7 @@ export class BookClosedComponent {
             this.router.navigate([this.prevPath]);
         }
     }
+
+    protected readonly bookPageWidth = BOOK_PAGE_WIDTH;
+    protected readonly Array = Array;
 }
