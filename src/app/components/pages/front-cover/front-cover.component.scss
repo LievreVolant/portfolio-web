@@ -1,0 +1,23 @@
+h1 {
+    font-size: 75px;
+    margin-top: 125px;
+    color: var(--color-5);
+}
+
+h2 {
+    font-size: 80px;
+    margin-top: 10px;
+    color: var(--color-6);
+}
+
+.writing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Valentine';
+}
+
+.inline {
+    display: flex;
+    flex-direction: row;
+}

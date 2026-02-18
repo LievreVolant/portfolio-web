@@ -1,10 +1,12 @@
 import {Component, Input} from '@angular/core';
-import {Router} from '@angular/router';
+import {Router, RouterOutlet} from '@angular/router';
 import {BOOK_COVER_HEIGHT, BOOK_COVER_WIDTH, BOOK_PAGE_WIDTH} from '../../../constants';
 
 @Component({
   selector: 'app-book-closed',
-  imports: [],
+    imports: [
+        RouterOutlet
+    ],
   templateUrl: './book-closed.component.html',
   styleUrl: './book-closed.component.scss'
 })
