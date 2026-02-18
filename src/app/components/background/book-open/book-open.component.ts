@@ -15,4 +15,5 @@ export class BookOpenComponent {
     bookCoverHeight = BOOK_COVER_HEIGHT;
     bookPageWidth = BOOK_PAGE_WIDTH;
     bookPageHeight = BOOK_PAGE_HEIGHT;
+    protected readonly Array = Array;
 }

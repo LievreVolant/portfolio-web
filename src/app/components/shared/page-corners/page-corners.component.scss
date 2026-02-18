@@ -1,21 +1,22 @@
 .div-corner-wrapper {
     display: flex;
     position: absolute;
-    width: calc(var(--book-page-width) * 2);
+    width: calc(var(--book-page-width) * 2 + 2px);
     bottom: 0;
     left: 0;
 }
 
+.left-corner, .right-corner {
+    width: 9.5vh;
+    height: 9.5vh;
+}
+
 .left-corner {
     left: 0;
-    width: 10vh;
-    height: 10vh;
     background: linear-gradient(45deg, var(--color-1) 50%, var(--grey) 50%);
 }
 .right-corner {
     position: absolute;
     right: 0;
-    width: 10vh;
-    height: 10vh;
     background: linear-gradient(-45deg, var(--color-1) 50%, var(--grey) 50%);
 }
