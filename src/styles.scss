@@ -30,6 +30,11 @@ $book-page-height: $book-cover-height - 60px;
     --book-page-height: #{$book-page-height};
 }
 
+@font-face { font-family: 'QuintalScript'; src: url('/assets/fonts/QuintalScript.otf') }
+@font-face { font-family: 'Amoria'; src: url('/assets/fonts/Amoria.otf') }
+@font-face { font-family: 'Valentine'; src: url('/assets/fonts/Valentine Delight.ttf') }
+@font-face { font-family: 'Catfont'; src: url('/assets/fonts/Catfont-Regular.ttf.otf') }
+
 html {
     background-size: cover;
     background-image: url("assets/images/starry_night.png");
@@ -62,12 +67,12 @@ p {
     cursor: pointer;
 }
 
-.div-page {
+.div-pages {
     display: flex;
     position: relative;
     width: $book-page-width * 2;
     height: $book-page-height;
-    margin: 17px 0 0 27px;
+    margin: 18px 0 0 28px;
 }
 .div-left-page, .div-right-page {
     width: $book-page-width - 100;
@@ -81,4 +86,37 @@ p {
 
 .div-right-page {
     margin-left: 115px;
+}
+
+.div-single-page {
+    display: flex;
+    position: relative;
+    width: $book-page-width - 225;
+    height: $book-page-height - 237;
+    margin: 141px 150px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-book-open {
+    position: relative;
+    height: var(--book-cover-height);
+    width: calc(var(--book-cover-width) * 2);
+}
+.div-book-closed {
+    position: relative;
+    height: var(--book-cover-height);
+    width: var(--book-cover-width);
+}
+
+.svg-book {
+    position: absolute;
+    z-index: 0;
+}
+
+.div-text-onbook {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
 }
