@@ -41,7 +41,19 @@
             }
         </svg>
     }
-    <div class="div-text-onbook">
+    <div class="div-on-book">
+        <div class="div-tab-left">
+
+        </div>
+
         <router-outlet/>
+
+        <div class="div-tab-right">
+            <app-tab title="Profile" [left]=false />
+            <app-tab title="Favorite Projects" [left]=false />
+            <app-tab title="Recent Projects" [left]=false />
+            <app-tab title="All Projects" [left]=false />
+            <app-tab title="Contact" [left]=false />
+        </div>
     </div>
 </div>
