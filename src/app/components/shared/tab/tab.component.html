@@ -1,0 +1,8 @@
+@if (tab != undefined) {
+    <div class="tab clickable" (click)="onTabClick(tab.path)"
+         [style.background-color]="tab.color"
+         [style.height.vw]="tab.height"
+         [style.width.vw]="tab.length">
+        <p>{{title}}</p>
+    </div>
+}

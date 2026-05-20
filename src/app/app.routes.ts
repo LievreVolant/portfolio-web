@@ -10,7 +10,7 @@ import {PassionsBisComponent} from './components/pages/passions-bis/passions-bis
 import {CompetencesComponent} from './components/pages/competences/competences.component';
 import {TheShadowWitchComponent} from './components/pages/favorite-projects/the-shadow-witch/the-shadow-witch.component';
 import {PortfolioComponent} from './components/pages/favorite-projects/portfolio/portfolio.component';
-import {DeusExMachinaComponent} from './components/pages/favorite-projects/deus-ex-machina/deus-ex-machina.component';
+import {AwesomeMinesweeperComponent} from './components/pages/favorite-projects/awesome-minesweeper/awesome-minesweeper.component';
 import {ProjectTemplateComponent} from './components/pages/project-template/project-template.component';
 import {FavoriteProjectsComponent} from './components/pages/favorite-projects/favorite-projects.component';
 
@@ -44,7 +44,7 @@ export const routes: Routes = [
         component: FavoriteProjectsComponent,
     },
     {
-        path: 'projects/favorite/1',
+        path: 'projects/favorite/3',
         component: TheShadowWitchComponent,
     },
     {
@@ -52,8 +52,8 @@ export const routes: Routes = [
         component: PortfolioComponent,
     },
     {
-        path: 'projects/favorite/3',
-        component: DeusExMachinaComponent,
+        path: 'projects/favorite/1',
+        component: AwesomeMinesweeperComponent,
     },
     {
         path: 'projects/all',
