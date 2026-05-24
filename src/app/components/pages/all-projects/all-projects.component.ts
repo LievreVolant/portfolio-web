@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {PageCornersComponent} from '../../shared/page-corners/page-corners.component';
+import {Page} from '../../../model/page.model'
 
 @Component({
   selector: 'app-all-projects',
@@ -9,6 +10,8 @@ import {PageCornersComponent} from '../../shared/page-corners/page-corners.compo
   templateUrl: './all-projects.component.html',
   styleUrl: './all-projects.component.scss'
 })
-export class AllProjectsComponent {
-
+export class AllProjectsComponent extends Page {
+    constructor() {
+        super('projects/favorite/3', 'projects/all/1', 'All Projects');
+    }
 }
