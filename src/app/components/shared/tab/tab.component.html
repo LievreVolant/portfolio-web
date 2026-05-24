@@ -1,8 +1,10 @@
 @if (tab != undefined) {
-    <div class="tab clickable" (click)="onTabClick(tab.path)"
+    <div class="div-tab clickable"
+         (click)="onTabClick(tab.path)"
          [style.background-color]="tab.color"
-         [style.height.vw]="tab.height"
-         [style.width.vw]="tab.length">
-        <p>{{title}}</p>
+         [style.height.px]="tab.height"
+         [style.width.px]="tab.length"
+         [style.margin-top.px]="tab.altitude">
+        <img [src]="tab.iconSrc" [alt]="tab.title"/>
     </div>
 }
