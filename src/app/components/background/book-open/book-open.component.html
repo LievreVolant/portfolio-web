@@ -41,19 +41,19 @@
             }
         </svg>
     }
-    <div class="div-on-book">
+    <div class="div-on-open-book">
         <div class="div-tab-left">
-
+            <app-tab title="Profile"/>
+            <app-tab title="Favorite Projects"/>
         </div>
 
         <router-outlet/>
 
         <div class="div-tab-right">
-            <app-tab title="Profile" [left]=false />
-            <app-tab title="Favorite Projects" [left]=false />
-            <app-tab title="Recent Projects" [left]=false />
-            <app-tab title="All Projects" [left]=false />
-            <app-tab title="Contact" [left]=false />
+            <app-tab title="Profile"/>
+            <app-tab title="Favorite Projects"/>
+            <app-tab title="All Projects"/>
+            <app-tab title="Contact"/>
         </div>
     </div>
 </div>

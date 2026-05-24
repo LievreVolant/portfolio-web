@@ -30,8 +30,6 @@ $book-page-height: $book-cover-height - 60px;
     --book-page-height: #{$book-page-height};
 }
 
-@font-face { font-family: 'QuintalScript'; src: url('/assets/fonts/QuintalScript.otf') }
-@font-face { font-family: 'Amoria'; src: url('/assets/fonts/Amoria.otf') }
 @font-face { font-family: 'Valentine'; src: url('/assets/fonts/Valentine Delight.ttf') }
 @font-face { font-family: 'Catfont'; src: url('/assets/fonts/Catfont-Regular.ttf.otf') }
 
@@ -70,9 +68,9 @@ p {
 .div-pages {
     display: flex;
     position: relative;
-    width: $book-page-width * 2;
+    width: $book-page-width * 2 + 2;
     height: $book-page-height;
-    margin: 18px 0 0 28px;
+    margin-top: 18px;
 }
 .div-left-page, .div-right-page {
     width: $book-page-width - 100;
@@ -114,9 +112,33 @@ p {
     z-index: 0;
 }
 
-.div-on-book {
+.div-on-book, .div-on-open-book {
     display: flex;
     flex-direction: row;
     position: relative;
     z-index: 1;
+}
+
+.div-on-open-book {
+    left: -82px;
+}
+
+.div-tab-left, .div-tab-right {
+    display: flex;
+    flex-direction: column;
+    height: calc($book-cover-height * 0.75);
+    width: 200px;
+    margin-top: 40px;
+}
+
+.div-tab-right {
+    align-items: start;
+}
+
+.div-tab-left {
+    align-items: end;
+}
+
+.div-tab-left app-tab .div-tab {
+    align-items: start;
 }
