@@ -55,6 +55,8 @@ h3 {
 }
 p {
     font-size: 1rem;
+    margin: 0;
+    text-align: justify;
 }
 
 .centered {
@@ -81,7 +83,7 @@ p {
 .div-left-page, .div-right-page {
     width: $book-page-width - 100;
     height: $book-page-height - 80;
-    margin-top: 25px
+    margin-top: 10px;
 }
 
 .div-left-page {
@@ -143,4 +145,43 @@ p {
 
 .div-tab-left app-tab .div-tab {
     align-items: start;
+}
+
+.div-img {
+    background-color: white;
+    margin: 15px auto;
+    padding: 10px;
+    box-shadow: 5px 5px 5px $grey;
+}
+
+.img-picture-large, .img-picture-small {
+    display:block;
+    object-fit: cover;
+}
+
+.img-picture-large {
+    width: $book-page-width * 0.45;
+    height: $book-page-height * 0.24;
+}
+
+.img-picture-small {
+    width: $book-page-width * 0.3;
+    height: $book-page-height * 0.16;
+}
+
+.img-sticker {
+    height: $book-page-width * 0.2;
+}
+
+.float-left {
+    float: left;
+    margin-right: 15px;
+}
+
+.rotated-left {
+    transform: rotate(-7deg);
+}
+
+.rotated-right {
+    transform: rotate(7deg);
 }
