@@ -13,6 +13,7 @@ import {PortfolioComponent} from './components/pages/favorite-projects/portfolio
 import {AwesomeMinesweeperComponent} from './components/pages/favorite-projects/awesome-minesweeper/awesome-minesweeper.component';
 import {ProjectTemplateComponent} from './components/pages/project-template/project-template.component';
 import {FavoriteProjectsComponent} from './components/pages/favorite-projects/favorite-projects.component';
+import {CareerComponent} from './components/pages/career/career.component';
 
 export const routes: Routes = [
     {
@@ -26,6 +27,10 @@ export const routes: Routes = [
     {
         path: 'presentation',
         component: PresentationComponent
+    },
+    {
+        path: 'presentation/career',
+        component: CareerComponent,
     },
     {
         path: 'presentation/competences',
