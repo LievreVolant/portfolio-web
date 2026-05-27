@@ -58,11 +58,29 @@ p {
     margin: 0;
     text-align: justify;
 }
+a {
+    text-decoration: none;
+}
 
 .centered {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.float-left {
+    float: left;
+    margin-right: 15px;
+}
+.float-right {
+    float: right;
+    margin-left: 15px;
+}
+
+.rotated-left {
+    transform: rotate(-7deg);
+}
+.rotated-right {
+    transform: rotate(7deg);
 }
 
 .alinea {
@@ -71,6 +89,29 @@ p {
 
 .clickable {
     cursor: pointer;
+}
+
+.mark-color1 {
+     background-color: rgba($color-1, 0.5);
+ }
+.mark-color2 {
+    background-color: rgba($color-2, 0.5);
+}
+.mark-color3 {
+    background-color: rgba($color-3, 0.5);
+}
+.mark-color4 {
+    background-color: rgba($color-4, 0.5);
+}
+.mark-color5 {
+    background-color: rgba($color-5, 0.5);
+}
+.mark-color6 {
+    background-color: rgba($color-6, 0.5);
+}
+
+.div-inline {
+    display: flex;
 }
 
 .div-pages {
@@ -148,6 +189,7 @@ p {
 }
 
 .div-img {
+    display: inline-block;
     background-color: white;
     margin: 15px auto;
     padding: 10px;
@@ -171,17 +213,4 @@ p {
 
 .img-sticker {
     height: $book-page-width * 0.2;
-}
-
-.float-left {
-    float: left;
-    margin-right: 15px;
-}
-
-.rotated-left {
-    transform: rotate(-7deg);
-}
-
-.rotated-right {
-    transform: rotate(7deg);
 }

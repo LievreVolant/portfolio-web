@@ -55,7 +55,7 @@ export class BookOpenComponent implements OnInit {
     }
 
     private normalizeUrl(url: string): string {
-        return url.replace(/\/\d+$/, '/:projectId');
+        return url.replace(/all\/\d+$/, 'all/:projectId');
     }
 
     private uniqueTabs(routes: string[]): Tab[] {
