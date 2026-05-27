@@ -35,7 +35,41 @@ export class Tab {
     }
 
     static profile: Tab = new Tab('Profile', "assets/images/cat.png", COLOR_6, 'presentation', 0, 90);
-    static favProjects: Tab = new Tab('Favorite Projects', "assets/images/star.png", COLOR_3, 'projects/favorite', 75, 110);
-    static allProjects: Tab = new Tab('All Projects', "assets/images/folder.png", COLOR_4, 'projects/all', 10, 80);
-    static contact: Tab = new Tab('Contact', "assets/images/paper_plane.png", COLOR_5, 'contact', 250, 90);
+    static favProjects: Tab = new Tab('Favorite Projects', "assets/images/star.png", COLOR_3, 'projects/favorite', 125, 110);
+    static allProjects: Tab = new Tab('All Projects', "assets/images/folder.png", COLOR_4, 'projects/all', 190, 80);
+    static contact: Tab = new Tab('Contact', "assets/images/paper_plane.png", COLOR_5, 'contact', 450, 90);
+
+    static routeOrder: string[] = [
+        '',
+        'summary',
+        'presentation',
+        'presentation/competences',
+        'presentation/passions/1',
+        'presentation/passions/2',
+        'projects/favorite',
+        'projects/favorite/1',
+        'projects/favorite/2',
+        'projects/favorite/3',
+        'projects/all',
+        'projects/all/:projectId',
+        'contact',
+        'back-cover',
+    ];
+
+    static routeToTab: Record<string, Tab | null> = {
+        '': null,
+        'summary': null,
+        'presentation': Tab.profile,
+        'presentation/competences': null,
+        'presentation/passions/1': null,
+        'presentation/passions/2': null,
+        'projects/favorite': Tab.favProjects,
+        'projects/favorite/1': null,
+        'projects/favorite/2': null,
+        'projects/favorite/3': null,
+        'projects/all': Tab.allProjects,
+        'projects/all/:projectId': null,
+        'contact': Tab.contact,
+        'back-cover': null,
+    };
 }

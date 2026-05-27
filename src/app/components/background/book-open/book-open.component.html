@@ -1,4 +1,4 @@
-<div class="div-book-open">
+<div class="div-book-open centered">
     @if (bookCoverWidth && bookCoverHeight) {
         <svg class="svg-book"
              [attr.width]="bookCoverWidth * 2"
@@ -41,19 +41,20 @@
             }
         </svg>
     }
+
     <div class="div-on-open-book">
         <div class="div-tab-left">
-            <app-tab title="Profile"/>
-            <app-tab title="Favorite Projects"/>
+            @for (tab of leftTabs; track tab) {
+                <app-tab [title]="tab.title"/>
+            }
         </div>
 
         <router-outlet/>
 
         <div class="div-tab-right">
-            <app-tab title="Profile"/>
-            <app-tab title="Favorite Projects"/>
-            <app-tab title="All Projects"/>
-            <app-tab title="Contact"/>
+            @for (tab of rightTabs; track tab) {
+                <app-tab [title]="tab.title" [isCurrent]="tab == currentTab"/>
+            }
         </div>
     </div>
 </div>
