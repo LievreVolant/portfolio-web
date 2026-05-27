@@ -10,6 +10,7 @@ import {Tab} from '../../../model/tab.model';
 })
 export class TabComponent implements OnInit {
     @Input() title?: string;
+    @Input() isCurrent: boolean = false;
     tab: Tab | null | undefined;
 
     constructor(protected router: Router) {}

@@ -7,9 +7,13 @@ img {
     margin: 0 7px 0 7px;
 }
 
-.div-tab {
+.div-tab, .div-tab-current {
     display: flex;
+    position: absolute;
     flex-direction: column;
-    vertical-align: center;
     align-items: end;
+}
+
+.div-tab-current {
+    margin-left: -60px;
 }

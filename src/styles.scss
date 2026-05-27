@@ -57,6 +57,12 @@ p {
     font-size: 1rem;
 }
 
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .alinea {
     padding: 0 0 0 50px;
 }
@@ -68,13 +74,13 @@ p {
 .div-pages {
     display: flex;
     position: relative;
+    margin-left: -21px;
     width: $book-page-width * 2 + 2;
-    height: $book-page-height;
-    margin-top: 18px;
+    height: $book-page-height - 25;
 }
 .div-left-page, .div-right-page {
     width: $book-page-width - 100;
-    height: $book-page-height - 60;
+    height: $book-page-height - 80;
     margin-top: 25px
 }
 
@@ -119,15 +125,11 @@ p {
     z-index: 1;
 }
 
-.div-on-open-book {
-    left: -82px;
-}
-
 .div-tab-left, .div-tab-right {
     display: flex;
     flex-direction: column;
     height: calc($book-cover-height * 0.75);
-    width: 200px;
+    width: 150px;
     margin-top: 40px;
 }
 

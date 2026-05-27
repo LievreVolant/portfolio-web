@@ -44,16 +44,16 @@ export const routes: Routes = [
         component: FavoriteProjectsComponent,
     },
     {
-        path: 'projects/favorite/3',
-        component: TheShadowWitchComponent,
+        path: 'projects/favorite/1',
+        component: AwesomeMinesweeperComponent,
     },
     {
         path: 'projects/favorite/2',
         component: PortfolioComponent,
     },
     {
-        path: 'projects/favorite/1',
-        component: AwesomeMinesweeperComponent,
+        path: 'projects/favorite/3',
+        component: TheShadowWitchComponent,
     },
     {
         path: 'projects/all',

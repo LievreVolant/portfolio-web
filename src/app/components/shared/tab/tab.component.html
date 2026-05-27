@@ -1,10 +1,22 @@
 @if (tab != undefined) {
-    <div class="div-tab clickable"
-         (click)="onTabClick(tab.path)"
-         [style.background-color]="tab.color"
-         [style.height.px]="tab.height"
-         [style.width.px]="tab.length"
-         [style.margin-top.px]="tab.altitude">
-        <img [src]="tab.iconSrc" [alt]="tab.title"/>
-    </div>
+    @if (isCurrent) {
+        <div class="div-tab-current clickable"
+             (click)="onTabClick(tab.path)"
+             [style.background-color]="tab.color"
+             [style.height.px]="tab.height"
+             [style.width.px]="tab.length + 60"
+             [style.margin-top.px]="tab.altitude">
+            <img [src]="tab.iconSrc" [alt]="tab.title"/>
+        </div>
+    }
+    @else {
+        <div class="div-tab clickable"
+             (click)="onTabClick(tab.path)"
+             [style.background-color]="tab.color"
+             [style.height.px]="tab.height"
+             [style.width.px]="tab.length"
+             [style.margin-top.px]="tab.altitude">
+            <img [src]="tab.iconSrc" [alt]="tab.title"/>
+        </div>
+    }
 }
