@@ -194,15 +194,18 @@ a {
 }
 
 .div-tab-right {
-    align-items: start;
+    align-items: flex-start;
 }
 
 .div-tab-left {
-    align-items: end;
+    position: relative;
+    align-items: flex-end;
 }
 
 .div-tab-left app-tab .div-tab {
-    align-items: start;
+    align-items: flex-start;
+    right: 21px;
+    box-shadow: -4px 5px 5px $black;
 }
 
 .div-img {
