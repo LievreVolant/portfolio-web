@@ -3,14 +3,15 @@ import {Router, RouterOutlet} from '@angular/router';
 import {BOOK_COVER_HEIGHT, BOOK_COVER_WIDTH, BOOK_PAGE_WIDTH} from '../../../constants';
 
 @Component({
-  selector: 'app-book-closed',
+  selector: 'app-book-closed-front',
     imports: [
         RouterOutlet
     ],
-  templateUrl: './book-closed.component.html',
-  styleUrl: './book-closed.component.scss'
+  templateUrl: './book-closed-front.component.html',
+  styleUrl: './book-closed-front.component.scss'
 })
-export class BookClosedComponent {
+export class BookClosedFrontComponent {
+    protected readonly Array = Array;
     @Input() prevPath?: string;
     @Input() nextPath?: string;
 
@@ -26,7 +27,4 @@ export class BookClosedComponent {
             this.router.navigate([this.prevPath]);
         }
     }
-
-    protected readonly bookPageWidth = BOOK_PAGE_WIDTH;
-    protected readonly Array = Array;
 }

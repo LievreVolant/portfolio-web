@@ -1,0 +1,80 @@
+<div class="div-book-closed clickable"
+     (click)="clickOnCover()">
+    @if (bookCoverWidth && bookCoverHeight) {
+        <svg class="svg-book"
+             [attr.width]="bookCoverWidth + 50"
+             [attr.height]="bookCoverHeight - 20">
+            <svg x="25">
+                <!--    Book Cover    -->
+                <rect [attr.width]="bookCoverWidth - 20"
+                      [attr.height]="bookCoverHeight - 20"
+                      rx="5" ry="5"
+                      [attr.fill]="'var(--color-1)'"
+                      class="svg-shadow"/>
+                <!--    Cadre    -->
+                <rect [attr.width]="bookCoverWidth - 150"
+                      [attr.height]="bookCoverHeight - 149"
+                      x="64" y="64"
+                      rx="5" ry="5"
+                      fill="none"
+                      [attr.stroke]="'var(--black)'"
+                      stroke-width="5px"/>
+                <!--    Fioritures    -->
+                <svg [attr.width]="bookCoverWidth"
+                     [attr.height]="bookCoverHeight">
+                    <circle r="80" cx=75 cy="75"
+                            [attr.fill]="'var(--color-1)'"
+                            [attr.stroke]="'var(--black)'"
+                            stroke-width="5"/>
+                    <circle r="80" [attr.cx]="bookCoverWidth - 90" cy="75"
+                            [attr.fill]="'var(--color-1)'"
+                            [attr.stroke]="'var(--black)'"
+                            stroke-width="5"/>
+                    <circle r="80" cx=75 [attr.cy]="bookCoverHeight- 90"
+                            [attr.fill]="'var(--color-1)'"
+                            [attr.stroke]="'var(--black)'"
+                            stroke-width="5"/>
+                    <circle r="80" [attr.cx]="bookCoverWidth - 90" [attr.cy]="bookCoverHeight - 90"
+                            [attr.fill]="'var(--color-1)'"
+                            [attr.stroke]="'var(--black)'"
+                            stroke-width="5"/>
+                </svg>
+                <!--    Fixes    -->
+                <rect [attr.width]="bookCoverWidth - 20"
+                      height="62"
+                      x="0" y="0"
+                      rx="5" ry="5"
+                      [attr.fill]="'var(--color-1)'"/>
+                <rect [attr.width]="bookCoverWidth - 20"
+                      height="63"
+                      x="0" [attr.y]="bookCoverHeight - 83"
+                      rx="5" ry="5"
+                      [attr.fill]="'var(--color-1)'"/>
+                <rect width="62"
+                      [attr.height]="bookCoverHeight - 20"
+                      x="0" y="0"
+                      rx="5" ry="5"
+                      [attr.fill]="'var(--color-1)'"/>
+                <rect width="64"
+                      [attr.height]="bookCoverHeight - 20"
+                      [attr.x]="bookCoverWidth - 84" y="0"
+                      rx="5" ry="5"
+                      [attr.fill]="'var(--color-1)'"/>
+            </svg>
+            <!--    Rings    -->
+            @for (i of Array(15); track i; let index = $index;) {
+                <svg [attr.y]="index*49 + 30"
+                     [attr.x]="bookCoverWidth - 35"
+                     width="81" height="39" viewBox="0 0 81 39"  fill="none">
+                    <path d="M7 17.8214C7 16.5799 7.98126 14.0016 12.7637 11.3322C17.3157 8.79141 24.0772 7.00015 31.9277 7.00012C39.7785 7.00012 46.5407 8.7913 51.0928 11.3322C55.875 14.0015 56.8555 16.5799 56.8555 17.8214C56.8554 19.063 55.875 21.6413 51.0928 24.3107C46.5407 26.8515 39.7785 28.6427 31.9277 28.6427C24.0772 28.6427 17.3157 26.8514 12.7637 24.3107C7.98134 21.6413 7.00003 19.063 7 17.8214Z"
+                          stroke="#D9D9D9" stroke-width="13"/>
+                    <rect x="0" y="17.5385" width="38.716" height="18.4615" [attr.fill]="'var(--color-1)'"/>
+                </svg>
+            }
+        </svg>
+
+        <div class="div-on-book">
+            <router-outlet/>
+        </div>
+    }
+</div>

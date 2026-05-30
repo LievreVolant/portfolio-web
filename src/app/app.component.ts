@@ -1,11 +1,12 @@
 import {Component} from '@angular/core';
 import {NavigationEnd, Router} from '@angular/router';
-import {BookClosedComponent} from './components/background/book-closed/book-closed.component';
+import {BookClosedFrontComponent} from './components/background/book-closed-front/book-closed-front.component';
 import {BookOpenComponent} from './components/background/book-open/book-open.component';
+import {BookClosedBackComponent} from './components/background/book-closed-back/book-closed-back.component';
 
 @Component({
     selector: 'app-root',
-    imports: [BookClosedComponent, BookOpenComponent],
+    imports: [BookClosedFrontComponent, BookOpenComponent, BookClosedBackComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })
