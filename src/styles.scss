@@ -1,12 +1,20 @@
-$color-1: #0B1E38;
+$color-1: #312d38;
+$color-2: #7F51A3;
+$color-3: #3599C4;
+$color-4: #69D1FE;
+$color-5: #CCF0FF;
+$color-6: #FF89D8;
+$white: #FFFDFA;
+$grey: #D9D9D9;
+$dark-grey: #8a8a8a;
+$black: #464646;
+
+/*$color-1: #0B1E38;
 $color-2: #173679;
 $color-3: #4888C8;
 $color-4: #7FC5DC;
 $color-5: #E8E163;
-$color-6: #DB901C;
-$white: #FFFDFA;
-$grey: #D9D9D9;
-$black: #464646;
+$color-6: #DB901C;*/
 
 $book-cover-width: 666px;
 $book-cover-height: 800px;
@@ -22,6 +30,7 @@ $book-page-height: $book-cover-height - 60px;
     --color-6: #{$color-6};
     --white: #{$white};
     --grey: #{$grey};
+    --dark-grey: #{$dark-grey};
     --black: #{$black};
 
     --book-cover-width: #{$book-cover-width};
@@ -35,7 +44,7 @@ $book-page-height: $book-cover-height - 60px;
 
 html {
     background-size: cover;
-    background-image: url("assets/images/starry_night.png");
+    background-image: url("assets/images/wood.png");
     overflow: hidden;
 }
 
@@ -81,6 +90,10 @@ a {
 }
 .rotated-right {
     transform: rotate(7deg);
+}
+
+.on-top {
+    z-index: 3;
 }
 
 .alinea {
@@ -161,6 +174,10 @@ a {
     z-index: 0;
 }
 
+.svg-shadow{
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
 .div-on-book, .div-on-open-book {
     display: flex;
     flex-direction: row;
@@ -193,7 +210,7 @@ a {
     background-color: white;
     margin: 15px auto;
     padding: 10px;
-    box-shadow: 5px 5px 5px $grey;
+    box-shadow: 5px 5px 5px $dark-grey;
 }
 
 .img-picture-large, .img-picture-small {

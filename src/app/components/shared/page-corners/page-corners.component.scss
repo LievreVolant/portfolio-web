@@ -2,21 +2,19 @@
     display: flex;
     position: absolute;
     width: calc(var(--book-page-width) * 2 + 2px);
-    bottom: 0;
-    left: 0;
+    bottom: 41px;
+    left: -13px;
 }
 
 .left-corner, .right-corner {
-    width: 100px;
+    width: 96px;
     height: 100px;
 }
 
 .left-corner {
     left: 0;
-    background: linear-gradient(45deg, var(--color-1) 50%, var(--grey) 50%);
 }
 .right-corner {
     position: absolute;
-    right: 0;
-    background: linear-gradient(-45deg, var(--color-1) 50%, var(--grey) 50%);
+    right: 32px;
 }
