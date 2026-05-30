@@ -2,19 +2,20 @@ h1 {
     font-size: 75px;
     margin-top: 110px;
     color: var(--grey);
+    font-family: 'Valentine', serif;
 }
 
 h2 {
     font-size: 87px;
     margin-top: 10px;
     color: var(--color-5);
+    font-family: 'Valentine', serif;
 }
 
 .writing {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Valentine', serif;
 }
 
 .inline {
