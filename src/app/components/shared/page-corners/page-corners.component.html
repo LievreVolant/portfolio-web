@@ -1,8 +1,11 @@
 <div class="div-corner-wrapper">
     <div (click)="onPageCornerClick(prevPath)"
          class="left-corner clickable">
-        <svg width="154" height="155" viewBox="0 0 154 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <svg width="154" height="155" viewBox="0 0 154 155" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 44.8017L109 44.8017L109 151.802L0 151.802L0 44.8017Z" fill="url(#paint0_linear_131_70)"/>
+            @if (prevPath != '') {
+                <rect x="13" y="45" width="96" height="96" [attr.fill]="'var(--white)'"/>
+            }
             <g filter="url(#filter0_d_131_70)">
                 <path d="M109 44.9949L13 44.9949L60.436 92.8983L109 140.802L109 44.9949Z" fill="#D9D9D9"/>
             </g>
@@ -18,8 +21,8 @@
                     <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_131_70" result="shape"/>
                 </filter>
                 <linearGradient id="paint0_linear_131_70" x1="2" y1="131.802" x2="99.9221" y2="33.8596" gradientUnits="userSpaceOnUse">
-                    <stop offset="0.5" stop-color="#312D38"/>
-                    <stop offset="0.5001" stop-color="#FFFDFA"/>
+                    <stop offset="0.5" [attr.stop-color]="'var(--color-1)'"/>
+                    <stop offset="0.5001" [attr.stop-color]="'var(--white)'"/>
                 </linearGradient>
             </defs>
         </svg>
@@ -28,12 +31,15 @@
     <div (click)="onPageCornerClick(nextPath)"
          class="right-corner clickable">
         <svg width="154" height="155" viewBox="0 0 154 155" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M153.904 44.8017L44.9043 44.8017L44.9043 151.802L153.904 151.802L153.904 44.8017Z" fill="url(#paint0_linear_131_69)"/>
+            <path d="M153.904 44.8015L44.9043 44.8015L44.9043 151.802L153.904 151.802L153.904 44.8015Z" fill="url(#paint0_linear_131_69)"/>
+            @if (nextPath != 'back-cover') {
+                <rect x="44.9043" y="43.8022" width="96" height="96" [attr.fill]="'var(--white)'"/>
+            }
             <g filter="url(#filter0_d_131_69)">
-                <path d="M44.9043 44.9949L140.904 44.9949L93.4683 92.8983L44.9043 140.802L44.9043 44.9949Z" fill="#D9D9D9"/>
+                <path d="M44.9043 44.9948L140.904 44.9948L93.4683 92.8982L44.9043 140.802L44.9043 44.9948Z" fill="#D9D9D9"/>
             </g>
             <defs>
-                <filter id="filter0_d_131_69" x="39.9043" y="44.9949" width="106" height="105.807" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <filter id="filter0_d_131_69" x="39.9043" y="44.9948" width="106" height="105.807" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                     <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                     <feOffset dy="5"/>
@@ -43,9 +49,9 @@
                     <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_131_69"/>
                     <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_131_69" result="shape"/>
                 </filter>
-                <linearGradient id="paint0_linear_131_69" x1="151.904" y1="131.802" x2="53.9822" y2="33.8596" gradientUnits="userSpaceOnUse">
-                    <stop offset="0.5" stop-color="#312D38"/>
-                    <stop offset="0.5001" stop-color="#FFFDFA"/>
+                <linearGradient id="paint0_linear_131_69" x1="151.904" y1="131.802" x2="53.9822" y2="33.8594" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.5" [attr.stop-color]="'var(--color-1)'"/>
+                    <stop offset="0.5001" [attr.stop-color]="'var(--white)'"/>
                 </linearGradient>
             </defs>
         </svg>
