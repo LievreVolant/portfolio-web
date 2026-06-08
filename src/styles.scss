@@ -86,6 +86,11 @@ a {
     justify-content: center;
     align-items: center;
 }
+.spaced {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .float-left {
     float: left;
     margin-right: 15px;
