@@ -14,9 +14,19 @@ export const GREY = '#D9D9D9';
 export const DARK_GREY = '#8a8a8a';
 export const BLACK = '#464646';
 
-/*export const COLOR_1 = '#0B1E38';
-export const COLOR_2 = '#173679';
-export const COLOR_3 = '#4888C8';
-export const COLOR_4 = '#7FC5DC';
-export const COLOR_5 = '#E8E163';
-export const COLOR_6 = '#DB901C';*/
+export const LINKS = {
+    angular: 'https://angular.dev/',
+    but: 'https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/but-bachelor-universitaire-de-technologie-BUT/but-informatique-grenoble-KI4UEV4Y.html',
+    corys: 'https://www.corys.com/en/',
+    csharp: 'https://dotnet.microsoft.com/fr-fr/languages/csharp/',
+    flutter: 'https://flutter.dev/',
+    miashs: 'https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/master-XB/master-mathematiques-et-informatique-appliquees-aux-sciences-humaines-et-sociales-miashs-IDIVLQ8C/parcours-informatique-et-cognition-IJLABXO5.html',
+};
+
+const iconsPath: string = 'assets/images/icons/languages/';
+export const IMG_SRC = {
+    angular: iconsPath + 'angular.png',
+    csharp: iconsPath + 'csharp.png',
+    flutter: iconsPath + 'flutter.png',
+    placeholder: 'assets/images/upia_monster.png',
+};

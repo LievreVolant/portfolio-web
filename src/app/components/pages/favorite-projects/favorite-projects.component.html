@@ -2,11 +2,13 @@
     <!-- Left Page -->
     <div class="div-left-page">
         <h1>Chapitre 2 : Mes projets</h1>
-        <h2>Mes projets principaux</h2>
-        <div class="div-img centered">
-            <img class="img-picture-large" src="assets/images/upia_monster.png">
+        <h2>< Mes projets principaux ></h2>
+        <div class="centered">
+            <div class="div-img">
+                <img class="img-picture-large" [src]="imgSrc.placeholder">
+            </div>
         </div>
-        <h3>Awesome Minesweeper</h3>
+        <h3>< Awesome Minesweeper ></h3>
         <p>
             À l'origine un projet de cours pour nous faire découvrir Dart et Flutter. J'ai adoré développer une application que je pouvais lancer sur mon téléphone et partager à mes amis et j'ai donc poursuivi le développement du jeu bien plus loin que ce qui était attendu. Awesome Minesweeper m'a permis de découvrir le processus de déploiement d'une application sur le Play Store.
         </p>
@@ -14,20 +16,26 @@
 
     <!-- Right Page -->
     <div class="div-right-page">
-        <h3>La Sorcière des Ombres</h3>
-        <div class="div-img">
-            <img class="img-picture-medium" src="assets/images/upia_monster.png">
+        <h3>< La Sorcière des Ombres ></h3>
+        <div class="spaced">
+            <p>
+                Projet réalisé dans le cadre de la GameJam de rentrée en troisième année de BUT. En équipe de 6 nous avons pu
+                développer un jeu en Python autour du thème du Moyen-Age et de la méchanique de jeu de la disparition.
+            </p>
+            <div class="div-img">
+                <img class="img-picture-medium" [src]="imgSrc.placeholder">
+            </div>
         </div>
-        <p>
-            Projet réalisé dans le cadre de la GameJam de rentrée en troisième année de BUT. En équipe de 6 nous avons pu développer un jeu en Python autour du thème du Moyen-Age et de la méchanique de jeu de la disparition.
-        </p>
-        <h3>Ce Portfolio</h3>
-        <div class="div-img">
-            <img class="img-picture-medium" src="assets/images/upia_monster.png">
+        <h3>< Ce Portfolio ></h3>
+        <div class="spaced">
+            <div class="div-img">
+                <img class="img-picture-medium" [src]="imgSrc.placeholder">
+            </div>
+            <p>
+                Ce portfolio est aussi un projet en lien avec le BUT. Nous avions comme consigne de réaliser un portfolio web
+                professionnel et/ou qui nous représente. Je l'ai réalisé en Angular.
+            </p>
         </div>
-        <p>
-            Ce portfolio est aussi un projet en lien avec le BUT. Nous avions comme consigne de réaliser un portfolio web professionnel et/ou qui nous représente. Je l'ai réalisé en Angular.
-        </p>
     </div>
 
     <app-page-corners prevPath="presentation/passions/2" nextPath="projects/favorite/1"/>
