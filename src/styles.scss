@@ -81,6 +81,18 @@ a {
     text-decoration: none;
 }
 
+::selection {
+    background: $color-1;
+    color: black;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: $color-2;
+    color: $white;
+    text-shadow: none;
+}
+
 .centered {
     display: flex;
     justify-content: center;
@@ -231,12 +243,17 @@ a {
     box-shadow: 5px 5px 5px $dark-grey;
 }
 
-.img-picture-large, .img-picture-small {
+.img-picture-large, .img-picture-medium, .img-picture-small {
     display:block;
     object-fit: cover;
 }
 
 .img-picture-large {
+    width: $book-page-width * 0.65;
+    height: $book-page-height * 0.33;
+}
+
+.img-picture-medium {
     width: $book-page-width * 0.45;
     height: $book-page-height * 0.24;
 }
