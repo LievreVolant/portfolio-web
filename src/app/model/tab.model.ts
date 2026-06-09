@@ -1,4 +1,4 @@
-import {COLOR_2, COLOR_3, COLOR_4, COLOR_5, COLOR_6} from '../constants';
+import {COLOR_2, COLOR_3, COLOR_4, COLOR_6} from '../constants';
 
 export class Tab {
     title: string;
@@ -34,12 +34,12 @@ export class Tab {
         }
     }
 
-    static profile: Tab = new Tab('Profile', "assets/images/icons/tabs/cat.png", COLOR_2, 'presentation', 0, 90);
-    static favProjects: Tab = new Tab('Favorite Projects', "assets/images/icons/tabs/star.png", COLOR_3, 'projects/favorite', 125, 110);
-    static allProjects: Tab = new Tab('All Projects', "assets/images/icons/tabs/folder.png", COLOR_4, 'projects/all', 190, 80);
-    static contact: Tab = new Tab('Contact', "assets/images/icons/tabs/paper_plane.png", COLOR_6, 'contact', 450, 90);
+    static readonly profile: Tab = new Tab('Profile', 'assets/images/icons/tabs/cat.png', COLOR_2, 'presentation', 0, 90);
+    static readonly favProjects: Tab = new Tab('Favorite Projects', 'assets/images/icons/tabs/star.png', COLOR_3, 'projects/favorite', 125, 110);
+    static readonly allProjects: Tab = new Tab('All Projects', 'assets/images/icons/tabs/folder.png', COLOR_4, 'projects/all', 190, 80);
+    static readonly contact: Tab = new Tab('Contact', 'assets/images/icons/tabs/paper_plane.png', COLOR_6, 'contact', 450, 90);
 
-    static routeOrder: string[] = [
+    static readonly routeOrder: string[] = [
         '',
         'summary',
         'presentation',
@@ -57,7 +57,7 @@ export class Tab {
         'back-cover',
     ];
 
-    static routeToTab: Record<string, Tab | null> = {
+    static readonly routeToTab: Record<string, Tab | null> = {
         '': null,
         'summary': null,
         'presentation': Tab.profile,

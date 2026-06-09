@@ -1,11 +1,12 @@
-.div-projects {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 .div-languages {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
- }
+}
+.div-projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-project {
+    width: calc(var(--book-page-width)* 0.4);
+}

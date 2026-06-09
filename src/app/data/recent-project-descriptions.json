@@ -1,0 +1,16 @@
+[
+  {
+    "id": "0",
+    "title": "Awesome Minesweeper",
+    "description": "Jeu de démineur sur mobile en Dart et Flutter, initialement réalisé dans le cadre d'un projet de cours. Prochainement déployé sur le Play Store !",
+    "languages": ["flutter, dart"],
+    "coverImg": "assets/images/upia_monster.png"
+  },
+  {
+    "id": "1",
+    "title": "Ce portfolio",
+    "description": "Ce même portfolio sur lequel vous vous trouvez. Mon petit projet chouchou. Réalisé en Angular.",
+    "languages": ["angular", "typescript"],
+    "coverImg": "assets/images/upia_monster.png"
+  }
+]

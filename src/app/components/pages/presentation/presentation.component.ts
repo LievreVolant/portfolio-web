@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
+import {RouterLink} from '@angular/router';
 import { PageCornersComponent } from '../../shared/page-corners/page-corners.component';
 import { IMG_SRC, LINKS } from '../../../constants';
-import * as projectDescriptions from '../../../data/short-project-descriptions.json';
+import recentProjectsData from '../../../data/recent-project-descriptions.json';
 
 @Component({
   selector: 'app-presentation',
     imports: [
         PageCornersComponent,
+        RouterLink,
     ],
   templateUrl: './presentation.component.html',
   styleUrl: './presentation.component.scss',
@@ -14,5 +16,5 @@ import * as projectDescriptions from '../../../data/short-project-descriptions.j
 export class PresentationComponent {
     readonly links = LINKS;
     readonly imgSrc = IMG_SRC;
-    projectDescriptions: unknown = projectDescriptions;
+    recentProjectsData: Project[] = recentProjectsData;
 }

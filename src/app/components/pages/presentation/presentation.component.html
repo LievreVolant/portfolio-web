@@ -9,7 +9,7 @@
         <p>
             Comme vous le savez sans doute déjà si vous lisez ces mots, je m'appelle Lili et je suis développeuse. Je me passionne depuis petite pour les jeux-vidéos et l'informatique, je suis extrêment curieuse et j'aime énormément apprendre de nouveaux langages et de nouvelles façon de développer avec ceux que je connais déjà. En ce moment je me passionne à apprendre comment développer des jeux pouvant fonctionner sur des consoles rétro comme la Gamecube ou la 3DS. 
         </p>
-        <p>Amusez-vous à parcourir mon portfolio et n'hésitez pas à me contacter pour quelconque projet</p>
+        <a routerLink="/contact"><p><mark class="mark-color6">Amusez-vous à parcourir mon portfolio et n'hésitez pas à me contacter pour quelconque projet !</mark></p></a>
 
         <h2>< Langages de prédilection ></h2>
         <div class="div-languages">
@@ -33,19 +33,23 @@
             <h2>< Projets en cours ></h2>
             <div class="div-projects">
                 <div class="div-project">
-                    <div class="div-img rotated-left img-left">
-                        <img title="Titre du projet" alt="Titre du projet" class="img-picture-small" [src]="imgSrc.placeholder">
-                    </div>
-                    <h4>Titre du projet</h4>
-                    <p>Description brève du projet</p>
+                    <a [routerLink]="'/projects/all/' + recentProjectsData[0].id" class="block">
+                        <div class="div-img rotated-left">
+                            <img [title]="recentProjectsData[0].title" [alt]="recentProjectsData[0].title" class="img-picture-small" [src]="recentProjectsData[0].coverImg">
+                        </div>
+                    </a>
+                    <a [routerLink]="'/projects/all/' + recentProjectsData[0].id"><h4><mark class="mark-color4">{{ recentProjectsData[0].title }}</mark></h4></a>
+                    <p>{{ recentProjectsData[0].description }}</p>
                 </div>
 
                 <div class="div-project">
-                    <div class="div-img rotated-right img-right">
-                        <img title="Titre du projet" alt="Titre du projet" class="img-picture-small" [src]="imgSrc.placeholder">
-                    </div>
-                    <h4>Titre du projet</h4>
-                    <p>Description brève du projet</p>
+                    <a [routerLink]="'/projects/all/' + recentProjectsData[1].id" class="block">
+                        <div class="div-img rotated-right">
+                            <img [title]="recentProjectsData[1].title" [alt]="recentProjectsData[1].title" class="img-picture-small" [src]="recentProjectsData[1].coverImg">
+                        </div>
+                    </a>
+                    <a [routerLink]="'/projects/all/' + recentProjectsData[1].id"><h4><mark class="mark-color3">{{ recentProjectsData[1].title }}</mark></h4></a>
+                    <p>{{ recentProjectsData[1].description }}</p>
                 </div>
             </div>
         </div>

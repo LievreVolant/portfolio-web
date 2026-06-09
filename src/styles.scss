@@ -74,18 +74,13 @@ a {
     text-decoration: none;
 }
 
-::selection {
-    background: $color-1;
-    color: black;
-    text-shadow: none;
+::selection, ::-moz-selection {
+    background: rgba($dark-grey, 0.5);
 }
 
-::-moz-selection {
-    background: $color-2;
-    color: $white;
-    text-shadow: none;
+.block {
+    display: block;
 }
-
 .centered {
     display: flex;
     justify-content: center;
@@ -126,8 +121,8 @@ a {
 }
 
 .mark-color1 {
-     background-color: rgba($color-1, 0.5);
- }
+    background-color: rgba($color-1, 0.5);
+}
 .mark-color2 {
     background-color: rgba($color-2, 0.5);
 }
