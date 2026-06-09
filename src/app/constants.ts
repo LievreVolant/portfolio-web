@@ -17,6 +17,7 @@ export const BLACK = '#464646';
 export const LINKS = {
     angular: 'https://angular.dev/',
     but: 'https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/but-bachelor-universitaire-de-technologie-BUT/but-informatique-grenoble-KI4UEV4Y.html',
+    cba: 'https://www.cbainfo.fr/',
     corys: 'https://www.corys.com/en/',
     csharp: 'https://dotnet.microsoft.com/fr-fr/languages/csharp/',
     flutter: 'https://flutter.dev/',
