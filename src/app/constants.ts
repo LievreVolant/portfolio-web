@@ -3,10 +3,10 @@ export const BOOK_COVER_HEIGHT = 800;
 export const BOOK_PAGE_WIDTH = BOOK_COVER_WIDTH - 50;
 export const BOOK_PAGE_HEIGHT = BOOK_COVER_HEIGHT - 60;
 
-export const COLOR_1 = '#362F42';
-export const COLOR_2 = '#9444D2';
-export const COLOR_3 = '#27B7F5';
-export const COLOR_4 = '#77D6FF';
+export const COLOR_1 = '#2e2540';
+export const COLOR_2 = '#813bbc';
+export const COLOR_3 = '#329fcd';
+export const COLOR_4 = '#69D1FE';
 export const COLOR_5 = '#CCF0FF';
 export const COLOR_6 = '#FF72D0';
 export const WHITE = '#FFFDFA';
