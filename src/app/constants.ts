@@ -25,9 +25,28 @@ export const LINKS = {
 };
 
 const iconsPath: string = 'assets/images/icons/languages/';
-export const IMG_SRC = {
+export const ICON_SRC = {
     angular: iconsPath + 'angular.png',
     csharp: iconsPath + 'csharp.png',
     flutter: iconsPath + 'flutter.png',
-    placeholder: 'assets/images/upia_monster.png',
+    placeholder: 'assets/images/upia/upia_monster.png',
+};
+
+const projectsPath: string = 'assets/images/projects/';
+export const IMG_SRC = {   
+    minesweeper: projectsPath + 'minesweeper_game.png',
+    placeholder: 'assets/images/upia/upia_monster.png',
+    portfolio: projectsPath + 'portfolio.png',
+};
+
+const catPath: string = 'assets/images/upia/';
+export const UPIA_SRC = {
+    bag: catPath + 'upia_bag.png',
+    bed: catPath + 'upia_bed.png',
+    close: catPath + 'upia_close.png',
+    coding: catPath + 'upia_code.png',
+    monster: catPath + 'upia_monster.png',
+    sleeping: catPath + 'upia_sleep.png',
+    stairs: catPath + 'upia_stairs.png',
+    washingMachine: catPath + 'upia_washing.png',
 };
