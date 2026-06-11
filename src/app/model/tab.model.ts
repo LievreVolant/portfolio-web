@@ -25,8 +25,8 @@ export class Tab {
                 return this.summary;
             case 'Profile':
                 return this.profile;
-            case 'Favorite Projects':
-                return this.favProjects;
+            case 'Projects':
+                return this.projects;
             case 'All Projects':
                 return this.allProjects;
             case 'Contact':
@@ -38,7 +38,7 @@ export class Tab {
 
     static readonly summary: Tab = new Tab('Summary', 'assets/images/icons/tabs/cat.png', COLOR_5, 'summary', 0, 80);
     static readonly profile: Tab = new Tab('Profile', 'assets/images/icons/tabs/cat.png', COLOR_2, 'presentation', 60, 90);
-    static readonly favProjects: Tab = new Tab('Favorite Projects', 'assets/images/icons/tabs/star.png', COLOR_3, 'projects/favorite', 165, 110);
+    static readonly projects: Tab = new Tab('Projects', 'assets/images/icons/tabs/star.png', COLOR_3, 'projects', 165, 110);
     static readonly allProjects: Tab = new Tab('All Projects', 'assets/images/icons/tabs/folder.png', COLOR_4, 'projects/all', 230, 80);
     static readonly contact: Tab = new Tab('Contact', 'assets/images/icons/tabs/paper_plane.png', COLOR_6, 'contact', 500, 90);
 
@@ -50,10 +50,7 @@ export class Tab {
         'presentation/competences',
         'presentation/passions/1',
         'presentation/passions/2',
-        'projects/favorite',
-        'projects/favorite/1',
-        'projects/favorite/2',
-        'projects/favorite/3',
+        'projects',
         'projects/all',
         'projects/all/:projectId',
         'contact',
@@ -66,10 +63,7 @@ export class Tab {
         'presentation': Tab.profile,
         'presentation/career': null,
         'presentation/competences': null,
-        'projects/favorite': Tab.favProjects,
-        'projects/favorite/1': null,
-        'projects/favorite/2': null,
-        'projects/favorite/3': null,
+        'projects': Tab.projects,
         'projects/all': Tab.allProjects,
         'projects/all/:projectId': null,
         'bonus/passions/1': null,

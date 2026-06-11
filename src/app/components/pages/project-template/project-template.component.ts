@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {PageCornersComponent} from '../../shared/page-corners/page-corners.component';
+import {IMG_SRC} from '../../../constants';
 
 @Component({
   selector: 'app-project-template',
@@ -11,4 +12,5 @@ import {PageCornersComponent} from '../../shared/page-corners/page-corners.compo
 })
 export class ProjectTemplateComponent {
 
+    protected readonly imgSrc = IMG_SRC;
 }

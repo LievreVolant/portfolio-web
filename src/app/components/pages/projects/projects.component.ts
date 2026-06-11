@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import {PageCornersComponent} from '../../shared/page-corners/page-corners.component';
-import { IMG_SRC } from '../../../constants';
+import {IMG_SRC} from '../../../constants';
 
 @Component({
-  selector: 'app-awesome-minesweeper',
+  selector: 'app-projects',
     imports: [
         PageCornersComponent,
     ],
-  templateUrl: './favorite-projects.component.html',
-  styleUrl: './favorite-projects.component.scss',
+  templateUrl: './projects.component.html',
+  styleUrl: './projects.component.scss',
 })
-export class FavoriteProjectsComponent {
+export class ProjectsComponent {
     readonly imgSrc = IMG_SRC;
 }
