@@ -232,6 +232,10 @@ a:hover {
     box-shadow: -4px 5px 5px $black;
 }
 
+.div-tab-left app-tab .div-tab:hover {
+    box-shadow: -3px 5px 5px var(--grey);
+}
+
 .div-img {
     display: inline-block;
     background-color: white;
