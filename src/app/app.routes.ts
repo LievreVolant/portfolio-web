@@ -37,14 +37,6 @@ export const routes: Routes = [
         component: CompetencesComponent,
     },
     {
-        path: 'presentation/passions/1',
-        component: PassionsComponent,
-    },
-    {
-        path: 'presentation/passions/2',
-        component: PassionsBisComponent,
-    },
-    {
         path: 'projects/favorite',
         component: FavoriteProjectsComponent,
     },
@@ -67,6 +59,14 @@ export const routes: Routes = [
     {
         path: 'projects/all/:projectId',
         component: ProjectTemplateComponent,
+    },
+    {
+        path: 'bonus/passions/1',
+        component: PassionsComponent,
+    },
+    {
+        path: 'bonus/passions/2',
+        component: PassionsBisComponent,
     },
     {
         path: 'contact',

@@ -1,4 +1,4 @@
-import {COLOR_2, COLOR_3, COLOR_4, COLOR_6} from '../constants';
+import {COLOR_2, COLOR_3, COLOR_4, COLOR_5, COLOR_6} from '../constants';
 
 export class Tab {
     title: string;
@@ -21,6 +21,8 @@ export class Tab {
 
     static getTabByTitle(title: string): Tab | null {
         switch (title) {
+            case 'Summary':
+                return this.summary;
             case 'Profile':
                 return this.profile;
             case 'Favorite Projects':
@@ -34,10 +36,11 @@ export class Tab {
         }
     }
 
-    static readonly profile: Tab = new Tab('Profile', 'assets/images/icons/tabs/cat.png', COLOR_2, 'presentation', 0, 90);
-    static readonly favProjects: Tab = new Tab('Favorite Projects', 'assets/images/icons/tabs/star.png', COLOR_3, 'projects/favorite', 125, 110);
-    static readonly allProjects: Tab = new Tab('All Projects', 'assets/images/icons/tabs/folder.png', COLOR_4, 'projects/all', 190, 80);
-    static readonly contact: Tab = new Tab('Contact', 'assets/images/icons/tabs/paper_plane.png', COLOR_6, 'contact', 450, 90);
+    static readonly summary: Tab = new Tab('Summary', 'assets/images/icons/tabs/cat.png', COLOR_5, 'summary', 0, 80);
+    static readonly profile: Tab = new Tab('Profile', 'assets/images/icons/tabs/cat.png', COLOR_2, 'presentation', 60, 90);
+    static readonly favProjects: Tab = new Tab('Favorite Projects', 'assets/images/icons/tabs/star.png', COLOR_3, 'projects/favorite', 165, 110);
+    static readonly allProjects: Tab = new Tab('All Projects', 'assets/images/icons/tabs/folder.png', COLOR_4, 'projects/all', 230, 80);
+    static readonly contact: Tab = new Tab('Contact', 'assets/images/icons/tabs/paper_plane.png', COLOR_6, 'contact', 500, 90);
 
     static readonly routeOrder: string[] = [
         '',
@@ -59,7 +62,7 @@ export class Tab {
 
     static readonly routeToTab: Record<string, Tab | null> = {
         '': null,
-        'summary': null,
+        'summary': Tab.summary,
         'presentation': Tab.profile,
         'presentation/career': null,
         'presentation/competences': null,

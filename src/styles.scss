@@ -32,10 +32,10 @@ $book-page-height: $book-cover-height - 60px;
     --book-page-height: #{$book-page-height};
 }
 
-@font-face { font-family: 'Valentine'; src: url('/assets/fonts/Valentine Delight.ttf') }
-@font-face { font-family: 'Diary'; src: url('/assets/fonts/Diary Story.otf') }
-@font-face { font-family: 'Written'; src: url('/assets/fonts/Sweetest Cat Ever.ttf') }
-@font-face { font-family: 'Catfont'; src: url('/assets/fonts/Catfont-Regular.ttf.otf') }
+@font-face { font-family: 'Valentine'; src: url('assets/fonts/Valentine Delight.ttf') }
+@font-face { font-family: 'Diary'; src: url('assets/fonts/Diary Story.otf') }
+@font-face { font-family: 'Written'; src: url('assets/fonts/Sweetest Cat Ever.ttf') }
+@font-face { font-family: 'Catfont'; src: url('assets/fonts/Catfont-Regular.ttf.otf') }
 
 html {
     background-size: cover;
@@ -76,9 +76,14 @@ p {
 a {
     text-decoration: none;
 }
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: $black;
+}
+
 
 ::selection, ::-moz-selection {
-    background: rgba($dark-grey, 0.5);
+    background: rgba($dark-grey, 0.3);
 }
 
 .block {
@@ -209,7 +214,7 @@ a {
     flex-direction: column;
     height: calc($book-cover-height * 0.75);
     width: 150px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .div-tab-right {
