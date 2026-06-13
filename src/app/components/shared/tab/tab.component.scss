@@ -3,8 +3,9 @@ p {
 }
 
 img {
-    width: 50px;
-    margin: 0 7px 0 7px;
+    max-width: 50px;
+    max-height: 40px;
+    margin: 7px;
 }
 
 .div-tab, .div-tab-current {
