@@ -34,9 +34,11 @@ export const ICON_SRC = {
 
 const projectsPath: string = 'assets/images/projects/';
 export const IMG_SRC = {   
-    minesweeper: projectsPath + 'minesweeper_game.png',
+    minesweeper: projectsPath + 'minesweeper-game.png',
     placeholder: 'assets/images/upia/upia_monster.png',
     portfolio: projectsPath + 'portfolio.png',
+    shadowWitch: projectsPath + 'shadow-witch.png',
+    shadowWitchCrop: projectsPath + 'shadow-witch-crop.png',
 };
 
 const catPath: string = 'assets/images/upia/';

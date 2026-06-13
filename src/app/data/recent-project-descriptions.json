@@ -4,7 +4,7 @@
     "title": "Awesome Minesweeper",
     "description": "Jeu de démineur sur mobile en Dart et Flutter, initialement réalisé dans le cadre d'un projet de cours. Prochainement déployé sur le Play Store !",
     "languages": ["flutter, dart"],
-    "coverImg": "assets/images/projects/minesweeper_game.png"
+    "coverImg": "assets/images/projects/minesweeper-game.png"
   },
   {
     "id": "1",
