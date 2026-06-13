@@ -1,4 +1,4 @@
-import {COLOR_2, COLOR_3, COLOR_4, COLOR_5, COLOR_6} from '../constants';
+import {COLOR_2, COLOR_3, COLOR_4, COLOR_6, COLOR_7} from '../constants';
 
 export class Tab {
     title: string;
@@ -36,11 +36,11 @@ export class Tab {
         }
     }
 
-    static readonly summary: Tab = new Tab('Summary', 'assets/images/icons/tabs/cat.png', COLOR_5, 'summary', 0, 80);
+    static readonly summary: Tab = new Tab('Summary', 'assets/images/icons/tabs/feather.png', COLOR_6, 'summary', 0, 80);
     static readonly profile: Tab = new Tab('Profile', 'assets/images/icons/tabs/cat.png', COLOR_2, 'presentation', 60, 90);
     static readonly projects: Tab = new Tab('Projects', 'assets/images/icons/tabs/star.png', COLOR_3, 'projects', 165, 110);
     static readonly allProjects: Tab = new Tab('All Projects', 'assets/images/icons/tabs/folder.png', COLOR_4, 'projects/all', 230, 80);
-    static readonly contact: Tab = new Tab('Contact', 'assets/images/icons/tabs/paper_plane.png', COLOR_6, 'contact', 500, 90);
+    static readonly contact: Tab = new Tab('Contact', 'assets/images/icons/tabs/paper_plane.png', COLOR_7, 'contact', 500, 90);
 
     static readonly routeOrder: string[] = [
         '',

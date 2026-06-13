@@ -9,6 +9,7 @@ export const COLOR_3 = '#329fcd';
 export const COLOR_4 = '#69D1FE';
 export const COLOR_5 = '#CCF0FF';
 export const COLOR_6 = '#FF72D0';
+export const COLOR_7 = '#881176';
 export const WHITE = '#FFFDFA';
 export const GREY = '#D9D9D9';
 export const DARK_GREY = '#8a8a8a';
@@ -33,7 +34,7 @@ export const ICON_SRC = {
 };
 
 const projectsPath: string = 'assets/images/projects/';
-export const IMG_SRC = {   
+export const IMG_SRC = {
     minesweeper: projectsPath + 'minesweeper-game.png',
     placeholder: 'assets/images/upia/upia_monster.png',
     portfolio: projectsPath + 'portfolio.png',
