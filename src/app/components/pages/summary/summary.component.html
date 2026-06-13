@@ -4,21 +4,24 @@
 
     <!-- Right Page -->
     <div class="div-right-page">
-        <h1>Sommaire</h1>
+        <h1><mark class="mark-color5">Sommaire</mark></h1>
         <div class="alinea">
             <a routerLink="/presentation"><h2><mark class="mark-color2">Chapitre 1 : Qui suis-je ?</mark></h2></a>
             <div class="alinea">
-                <h3>Mes expériences professionnelles</h3>
-                <h3>Mon parcours académique</h3>
-                <h3>Mes compétences</h3>
-                <h3>Mes passions</h3>
+                <a routerLink="/presentation/career"><h3>Mes expériences professionnelles</h3></a>
+                <a routerLink="/presentation/career"><h3>Mon parcours académique</h3></a>
+                <a routerLink="/presentation/competences"><h3>Mes compétences</h3></a>
             </div>
-            <h2>Chapitre 2 : Mes projets</h2>
+            <a routerLink="/projects"><h2><mark class="mark-color3">Chapitre 2 : Mes Projets</mark></h2></a>
             <div class="alinea">
-                <a routerLink="/projects/favorite"><h3><mark class="mark-color3">Mes projets favoris</mark></h3></a>
                 <a routerLink="/projects/all"><h3><mark class="mark-color4">Tous mes projets</mark></h3></a>
+                <div class="alinea">
+                    <a routerLink="/projects/all/0"><h3>Titre de projet</h3></a>
+                    <a routerLink="/projects/all/1"><h3>Titre de projet</h3></a>
+                </div>
             </div>
-            <a routerLink="/contact"><h2><mark class="mark-color6">Chapitre 3 : Me contacter</mark></h2></a>
+            <a routerLink="/bonus/passions/1"><h2>Chapitre 3 (Bonus) : Mes Passions</h2></a>
+            <a routerLink="/contact"><h2><mark class="mark-color6">Chapitre 4 : Me Contacter</mark></h2></a>
         </div>
     </div>
 

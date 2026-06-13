@@ -1,0 +1,42 @@
+<div class="div-pages">
+    <!-- Left Page -->
+    <div class="div-left-page">
+        <h1>Chapitre 2 : Mes projets</h1>
+        <h2>< Mes projets principaux ></h2>
+        <div class="centered">
+            <div class="div-img">
+                <img class="img-picture-large" [src]="imgSrc.minesweeper">
+            </div>
+        </div>
+        <h3>< Awesome Minesweeper ></h3>
+        <p>
+            À l'origine un projet de cours pour nous faire découvrir Dart et Flutter. J'ai adoré développer une application que je pouvais lancer sur mon téléphone et partager à mes amis et j'ai donc poursuivi le développement du jeu bien plus loin que ce qui était attendu. Awesome Minesweeper m'a permis de découvrir le processus de déploiement d'une application sur le Play Store.
+        </p>
+    </div>
+
+    <!-- Right Page -->
+    <div class="div-right-page">
+        <h3>< La Sorcière des Ombres ></h3>
+        <div class="spaced">
+            <p>
+                Projet réalisé dans le cadre de la GameJam de rentrée en troisième année de BUT. En équipe de 6 nous avons pu
+                développer un jeu en Python autour du thème du Moyen-Age et de la méchanique de jeu de la disparition.
+            </p>
+            <div class="div-img rotated-right">
+                <img class="img-picture-medium" [src]="imgSrc.shadowWitchCrop">
+            </div>
+        </div>
+        <h3>< Ce Portfolio ></h3>
+        <div class="spaced">
+            <div class="div-img rotated-left">
+                <img class="img-picture-medium" [src]="imgSrc.portfolio">
+            </div>
+            <p>
+                Ce portfolio est aussi un projet en lien avec le BUT. Nous avions comme consigne de réaliser un portfolio web
+                professionnel et/ou qui nous représente. Je l'ai réalisé en Angular.
+            </p>
+        </div>
+    </div>
+
+    <app-page-corners prevPath="presentation/competences" nextPath="projects/all"/>
+</div>
