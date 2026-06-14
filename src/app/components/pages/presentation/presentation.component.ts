@@ -17,5 +17,5 @@ export class PresentationComponent {
     readonly links = LINKS;
     readonly imgSrc = IMG_SRC;
     readonly iconSrc = ICON_SRC;
-    recentProjectsData: Project[] = recentProjectsData;
+    recentProjectsData: RecentProjectData[] = recentProjectsData;
 }

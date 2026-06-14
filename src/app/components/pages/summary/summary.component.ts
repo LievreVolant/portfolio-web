@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {PageCornersComponent} from '../../shared/page-corners/page-corners.component';
 import {RouterLink} from '@angular/router';
+import projectsData from '../../../data/projects.json';
 
 @Component({
   selector: 'app-summary',
@@ -9,7 +10,8 @@ import {RouterLink} from '@angular/router';
         RouterLink,
     ],
   templateUrl: './summary.component.html',
-  styleUrl: './summary.component.scss'
+  styleUrl: './summary.component.scss',
 })
 export class SummaryComponent {
+    projectsData: ProjectData[] = projectsData;
 }

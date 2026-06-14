@@ -1,10 +1,22 @@
 [
     {
-        "name":"Chât'Odyssée",
-        "visual":"public/images/chat_odyssee.png",
-        "summary":"Chât'Odyssée est une application web de carnet de voyage où chacun peut consigner ses expéditions dans les châteaux de la région Auvergne-Rhônes-Alpes ainsi que se renseigner sur les prochains château à visiter. Ce projet fût réalisé en équipe de 6 dans le cadre de la \"SAE\" du troisième semestre du BUT dont le thème était \"Valoriser le patrimoine culturelle\".",
-        "description":"Chât'Odyssée est le premier projet que j'ai réalisé en BUT, nous avons pu mettre en pratique nos connaissances sur toutes les étapes de projet, du cadrage du projet à sa réalisation.",
-        "contribution":"Ce projet étant le tout premier auquel j'ai pu participer, je manquais d'expérience vis-à-vis de mes collègues. J'ai donc comblé ce manque d'expérience en me concentrant sur ce que je connaissais, en amont du développement, je me suis donc occupée de la récolte des données sur les châteaux, et leur formatage via le logiciel Talend. Ensuite, durant le dévellopement de l'application, j'ai pu mettre en place la recherche de château ainsi que l'affichage des activités des amis sur la page d'accueil.",
+        "id":"1",
+        "title":"Chât'Odyssée",
+        "isFavorite":true,
+        "description":"Chât'Odyssée est une application web de carnet de voyage où chacun peut consigner ses expéditions dans les châteaux de la région Auvergne-Rhônes-Alpes ainsi que se renseigner sur les prochains château à visiter. Ce projet fût réalisé en équipe de 6 dans le cadre de la \"SAE\" du troisième semestre du BUT dont le thème était \"Valoriser le patrimoine culturelle\".",
+        "goals":"Mener un projet de A à Z en équipe, en passant par le cadrage du projet, la conception et la réalisation.",
+        "first_paragraph":{
+            "title":"Conception",
+            "text":""
+        },
+        "second_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "third_paragraph":{
+            "title":"",
+            "text":""
+        },
         "languages":[
             "PHP",
             "HTML",
@@ -14,76 +26,76 @@
         ],
         "images":[
             {
-                "name":"La page d'accueil",
-                "lien":"public/images/placeholder.png"
+                "title":"La page d'accueil",
+                "source":"public/images/placeholder.png"
             },
             {
-                "name":"Le carnet de voyage",
-                "lien":"public/images/placeholder.png"
+                "title":"Le carnet de voyage",
+                "source":"public/images/placeholder.png"
             },
             {
-                "name":"La page de recherche",
-                "lien":"public/images/placeholder.png"
+                "title":"La page de recherche",
+                "source":"public/images/placeholder.png"
             },
             {
-                "name":"Le profil de l'utilisateur",
-                "lien":"public/images/placeholder.png"
+                "title":"Le profil de l'utilisateur",
+                "source":"public/images/placeholder.png"
             },
             {
-                "name":"Les activités et notifications",
-                "lien":"public/images/placeholder.png"
+                "title":"Les activités et notifications",
+                "source":"public/images/placeholder.png"
             }
         ],
-        "liens":[
+        "documents":[
+        ],
+        "links":[
         ]
     },
-
     {
-        "name":"Deus Ex Machina",
-        "visual":"public/images/illu3DS.jpg",
-        "summary":"Ce jeu est encore à l'étape de conception, il sera réalisé par moi et 3 de mes amis, chacun nous occupant de notre spécialité: code, dessin, musique... \nNous comptons organiser un \"bootcamp\" cet été où nous projetons d'en développer une démo en une semaine.",
-        "description":"Ce projet nous tiens énormément à coeur à mon meilleur ami et moi, cela fait maintenant 4 ans que nous révons de créer notre jeu avec toutes les fonctionnalités que nous aimons. Mais cela fait seulement depuis septembre dernier que nous traitons réellement ce rêve comme un projet concret. Ce projet me permet également de mettre en pratique les méthodes de gestion de projet que j'apprends en BUT et ailleurs.",
-        "contribution":"Mon rôle dans ce projet est celui de co-cheffe de projet, développeuse, et scénariste. J'écris actuellement le scénario du jeu avec mon meilleur ami, tout en me familiarisant avec le fonctionnement d'Unity pour 3DS. J'apprends également la modélisation 3d sur Blender afin de pouvoir aider plus tard notre game designer si nécessaire",
+        "id":"2",
+        "title":"Deus Ex Machina",
+        "isFavorite":false,
+        "description":"Ce jeu est encore à l'étape de conception, il sera réalisé par moi et 3 de mes amis, chacun nous occupant de notre spécialité: code, dessin, musique... \nNous comptons organiser un \"bootcamp\" cet été où nous projetons d'en développer une démo en une semaine.",
+        "goals":"",
+        "first_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "second_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "third_paragraph":{
+            "title":"",
+            "text":""
+        },
         "languages":[
-            "C++",
-            "C#"
         ],
         "images":[
-            {
-                "name":"Notre équipe",
-                "lien":"public/images/nous.png"
-            },
-            {
-                "name":"Début de conception des mini-jeux",
-                "lien":"public/images/placeholder.png"
-            },
-            {
-                "name":"ClickUp et l'organisation du projet",
-                "lien":"public/images/placeholder.png"
-            },
-            {
-                "name":"Le premier test sur 3DS",
-                "lien":"public/images/testunity.jng"
-            },
-            {
-                "name":"",
-                "lien":"public/images/placeholder.png"
-            }
         ],
-        "liens":[
-            {
-                "name":"La page Github",
-                "lien":"https://github.com/LievreVolant"
-            }
+        "documents":[
+        ],
+        "links":[
         ]
     },
-
     {
-        "name":"Alchi'Mix",
-        "visual":"public/images/alchimix_res.png",
-        "summary":"Projet réalisé en quelques jours afin de se familiariser avec l'utilisation des APIs en JavaScript",
+        "id":"3",
+        "title":"Alchi'Mix",
+        "isFavorite":false,
         "description":"Alchi'Mix est une application permettant de consulter les données de l'API TheCocktailDB, elle permet également de créer ses propres cocktails de façon ludique. Nous avons réalisé cette application en équipe de 3.",
-        "contribution":"Je me suis occupée de la partie création de cocktails. J'ai récupéré les ingrédients grâce au service principal réalisé par une autre membre de notre équipe. J'ai ensuite généré un cocktail aléatoire à afficher : une ilustration aléatoire parmis celles de application et un name constitué d'un préfixe aléatoire et un des ingrédient du cocktail. Nous souhaitions faire en sorte d'afficher les données de l'API si l'utilisateur choississais les ingrédients d'un cocktail existant mais cela nécessitait trop d'appels pour effectuer la correspondance des ingrédients",
+        "goals":"",
+        "first_paragraph":{
+            "title":"Ma contribution",
+            "text":"Je me suis occupée de la partie création de cocktails. J'ai récupéré les ingrédients grâce au service principal réalisé par une autre membre de notre équipe. J'ai ensuite généré un cocktail aléatoire à afficher : une ilustration aléatoire parmis celles de application et un title constitué d'un préfixe aléatoire et un des ingrédient du cocktail. Nous souhaitions faire en sorte d'afficher les données de l'API si l'utilisateur choississais les ingrédients d'un cocktail existant mais cela nécessitait trop d'appels pour effectuer la correspondance des ingrédients."
+        },
+        "second_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "third_paragraph":{
+            "title":"",
+            "text":""
+        },
         "languages":[
             "HTML",
             "CSS",
@@ -91,40 +103,49 @@
         ],
         "images":[
             {
-                "name":"La page d'accueil",
-                "lien":"public/images/placeholder.png"
+                "title":"La page d'accueil",
+                "source":"public/images/placeholder.png"
             },
             {
-                "name":"La page de recherche",
-                "lien":"public/images/placeholder.png"
+                "title":"La page de recherche",
+                "source":"public/images/placeholder.png"
             },
             {
-                "name":"Création d'un cocktail",
-                "lien":"public/images/alchimix_crea.png"
+                "title":"Création d'un cocktail",
+                "source":"public/images/alchimix_crea.png"
             },
             {
-                "name":"Résultat de la création de cocktail",
-                "lien":"public/images/alchimix_res.png"
-            },
-            {
-                "name":"Affichage des informations d'un cocktail",
-                "lien":"public/images/placeholder.png"
+                "title":"Résultat de la création de cocktail",
+                "source":"public/images/alchimix_res.png"
             }
         ],
-        "liens":[
+        "documents":[
+        ],
+        "links":[
             {
-                "name":"TheCocktailDB",
-                "lien":"https://www.thecocktaildb.com/"
+                "title":"TheCocktailDB",
+                "link":"https://www.thecocktaildb.com/"
             }
         ]
     },
-
     {
-        "name":"Carnet de recherche de stage",
-        "visual":"public/images/icon_carnet.png",
-        "summary":"Second projet réalisé en BUT. Prenant place durant le semestre contenant le stage de fin d'année, ce projet consistait à améliorer une application existante.",
-        "description":"L'objectif de ce projet était d'améliorer une application existante de gestion de stages par rapport à des critères de qualités choisis par nos soins. Notre groupe a choisis de se concentrer sur les critères de ..., ... et .... L'application possède un back-office web pour le responsable des stages, codé en PHP Symfony, et un front office Android, destiné aux étudiants, codé en Java et UML.",
-        "contribution":"Je me suis occupée de réaliser quelques unes des interfaces du front-office Android. J'ai également réalisé les pages d'affichages d'offres de stage et de demandes de stage en cours. Enfin j'ai apporté mon aide pour la réalisation du visual de certaines des autres pages de l'application mobile.",
+        "id":"4",
+        "title":"Carnet de recherche de stage",
+        "isFavorite":false,
+        "description":"",
+        "goals":"",
+        "first_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "second_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "third_paragraph":{
+            "title":"",
+            "text":""
+        },
         "languages":[
             "PHP",
             "Symfony",
@@ -132,37 +153,30 @@
             "UML"
         ],
         "images":[
-            {
-                "name":"Maquette des interfaces améliorées",
-                "lien":"public/images/maquettesameliorees.png"
-            },
-            {
-                "name":"Liste des avancées des étudiants",
-                "lien":"public/images/placeholder.png"
-            },
-            {
-                "name":"Page d'accueil et liste d'offres mobile",
-                "lien":"public/images/placeholder.png"
-            },
-            {
-                "name":"",
-                "lien":"public/images/placeholder.png"
-            },
-            {
-                "name":"",
-                "lien":"public/images/placeholder.png"
-            }
         ],
-        "liens":[
+        "documents":[
+        ],
+        "links":[
         ]
     },
-
     {
-        "name":"BloomyFleet",
-        "visual":"public/images/placeholder.jpg",
-        "summary":"BloomyFleet est l'application que j'ai réalisé au cours de mon stage de fin de deuxième année de BUT. J'ai réalisé cette mission chez CBA Informatique Libérale à Avignon.",
-        "description":"BloomyFleet permets aux développeurs et au personnel du SAV de CBA de contrôler facilement le parc des \"Bloomy\" de l'entreprise. Nous avons réalisé cette application en binôme avec un autre stagiaire de l'entreprise, lui s'occupant du back-end et moi du front-end. À l'image du reste des équipe de l'entreprise nous avons travaillé selon la méthode agile Scrum",
-        "contribution":"J'ai développé le front de l'aplication en Angular et GraphQL pour les appels à la base de données. J'ai appris de zéro Angular, TypeScript et GraphQl pour cette mission, ce qui l'a rendue extrêment interressante et bénéfique pour moi. J'ai également pu appliquer ce que j'avais appris en cours plus tôt dans l'année sur les méthodes agiles et les logiciels de gestion de projet tels Jira et ClickUp. J'ai énormément appris durant ces 2 mois sur absolument tout les plans possibles et je suis très reconnaissante de l'expérience qu'il m'a apportée.",
+        "id":"5",
+        "title":"BloomyFleet",
+        "isFavorite":false,
+        "description":"BloomyFleet est l'application que j'ai réalisé au cours de mon stage de fin de deuxième année de BUT. J'ai réalisé cette mission chez CBA Informatique Libérale à Avignon. BloomyFleet permets aux développeurs et au personnel du SAV de CBA de contrôler facilement le parc des \"Bloomy\" de l'entreprise. Nous avons réalisé cette application en binôme avec un autre stagiaire de l'entreprise, lui s'occupant du back-end et moi du front-end. À l'image du reste des équipe de l'entreprise nous avons travaillé selon la méthode agile Scrum",
+        "goals":"",
+        "first_paragraph":{
+            "title":"Réalisation",
+            "text":"J'ai développé le front de l'aplication en Angular et GraphQL pour les appels à la base de données. J'ai appris de zéro Angular, TypeScript et GraphQl pour cette mission, ce qui l'a rendue extrêment interressante et bénéfique pour moi. J'ai également pu appliquer ce que j'avais appris en cours plus tôt dans l'année sur les méthodes agiles et les logiciels de gestion de projet tels Jira et ClickUp. J'ai énormément appris durant ces 2 mois sur absolument tout les plans possibles et je suis très reconnaissante de l'expérience qu'il m'a apportée."
+        },
+        "second_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "third_paragraph":{
+            "title":"",
+            "text":""
+        },
         "languages":[
             "TypeScript",
             "Angular",
@@ -170,31 +184,133 @@
         ],
         "images":[
             {
-                "name":"Un Bloomy",
-                "lien":"public/images/placeholder.png"
+                "title":"Liste des Bloomy",
+                "source":"public/images/bloomy_bloomydetails.png"
             },
             {
-                "name":"Liste des Bloomy",
-                "lien":"public/images/bloomy_bloomydetails.png"
+                "title":"Tableau de bord",
+                "source":"public/images/bloomy_dashboard.png"
             },
             {
-                "name":"Tableau de bord",
-                "lien":"public/images/bloomy_dashboard.png"
+                "title":"Liste des utilisateurs",
+                "source":"public/images/bloomy_edituser.png"
             },
             {
-                "name":"Liste des utilisateurs",
-                "lien":"public/images/bloomy_edituser.png"
-            },
-            {
-                "name":"Formulaire de nouvel utilisateur",
-                "lien":"public/images/bloomy_form.png"
+                "title":"Formulaire de nouvel utilisateur",
+                "source":"public/images/bloomy_form.png"
             }
         ],
-        "liens":[
-            {
-                "name":"CBA",
-                "lien":"https://www.cbainfo.fr/"
-            }
+        "documents":[
+        ],
+        "links":[
+        ]
+    },
+    {
+        "id":"6",
+        "title":"La Sorcière des Ombres",
+        "isFavorite":true,
+        "description":"",
+        "goals":"",
+        "first_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "second_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "third_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "languages":[
+        ],
+        "images":[
+        ],
+        "documents":[
+        ],
+        "links":[
+        ]
+    },
+    {
+        "id":"7",
+        "title":"Ce Portfolio",
+        "isFavorite":true,
+        "description":"",
+        "goals":"",
+        "first_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "second_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "third_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "languages":[
+        ],
+        "images":[
+        ],
+        "documents":[
+        ],
+        "links":[
+        ]
+    },
+    {
+        "id":"8",
+        "title":"IndissPlus Launcher",
+        "isFavorite":false,
+        "description":"",
+        "goals":"",
+        "first_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "second_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "third_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "languages":[
+        ],
+        "images":[
+        ],
+        "documents":[
+        ],
+        "links":[
+        ]
+    },
+    {
+        "id":"9",
+        "title":"Awesome Minesweeper",
+        "isFavorite":true,
+        "description":"",
+        "goals":"",
+        "first_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "second_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "third_paragraph":{
+            "title":"",
+            "text":""
+        },
+        "languages":[
+        ],
+        "images":[
+        ],
+        "documents":[
+        ],
+        "links":[
         ]
     }
 ]
