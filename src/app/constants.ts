@@ -23,6 +23,7 @@ export const LINKS = {
     csharp: 'https://dotnet.microsoft.com/fr-fr/languages/csharp/',
     flutter: 'https://flutter.dev/',
     miashs: 'https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/master-XB/master-mathematiques-et-informatique-appliquees-aux-sciences-humaines-et-sociales-miashs-IDIVLQ8C/parcours-informatique-et-cognition-IJLABXO5.html',
+    python: 'https://www.python.org/',
 };
 
 const iconsPath: string = 'assets/images/icons/languages/';
@@ -31,6 +32,7 @@ export const ICON_SRC = {
     csharp: iconsPath + 'csharp.png',
     flutter: iconsPath + 'flutter.png',
     placeholder: 'assets/images/upia/upia_monster.png',
+    python: iconsPath + 'python.png',
 };
 
 const projectsPath: string = 'assets/images/projects/';

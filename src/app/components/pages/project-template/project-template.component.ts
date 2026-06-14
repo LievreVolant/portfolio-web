@@ -13,16 +13,15 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './project-template.component.scss',
 })
 export class ProjectTemplateComponent implements OnInit {
-    projectsData: ProjectData[] = projectsData;
     protected readonly imgSrc = IMG_SRC;
     projectId: number | null = null;
     project: ProjectData | null = null;
-    
+
     constructor(private readonly route: ActivatedRoute) { }
 
     ngOnInit(): void {
-        this.route.paramMap.subscribe((param) => { 
-            this.projectId = Number(param.get('projectId')); 
+        this.route.paramMap.subscribe((param) => {
+            this.projectId = Number(param.get('projectId'));
             if (this.projectId) {
                 this.project = projectsData.find(p => p.id === this.projectId) ?? null;
             }
