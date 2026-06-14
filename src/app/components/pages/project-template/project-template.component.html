@@ -1,31 +1,35 @@
 <div class="div-pages">
     <!-- Left Page -->
     <div class="div-left-page">
-        <h2>< Awesome Minesweeper ></h2>
-        <div class="div-languages">
+        @if (project) {
+            <h2>< {{ project.title }}></h2>
+            <div class="div-languages">
+                @for (language of project.languages; track project.languages) {
+                    <p>{{ language }}</p>
+                }
+            </div>
 
-        </div>
-        <h3>Présentation</h3>
-        <p>
-            Awesome Minesweeper c'est un projet qui a démarré comme un projet guidé lors de ma troisième année de BUT.
-        </p>
-        <h3>Objectifs</h3>
-        <p>Développer un projet de la conception au déploiement, découvrir la publication sur le PlayStore</p>
-        <h3>Conception</h3>
-        <div class="div-img rotated-right">
-            <img class="img-picture-medium" [src]="imgSrc.placeholder">
-        </div>
+            <h3>Présentation</h3>
+            <p>{{ project.description }}</p>
+
+            <h3>Objectifs</h3>
+            <p>{{ project.goals }}</p>
+
+            <h3>{{ project.first_paragraph.title }}</h3>
+            <p>{{ project.first_paragraph.text }}</p>
+        }
     </div>
 
     <!-- Right Page -->
     <div class="div-right-page">
-        <h3>Réalisation</h3>
-        <div class="div-img rotated-left">
-            <img class="img-picture-medium" [src]="imgSrc.placeholder">
-        </div>
-        <h3>À venir</h3>
-        <p>Il reste toujours quelques bugs à régler. Une fois la version actuelle solide j'aimerai la déployer officiellement sur le PlayStore. Une fois cela fait, je rajouterai des mises à jour comme l'ajout de thêmes ou des modes multijoueurs.</p>
+        @if (project) {
+            <h3>{{ project.second_paragraph.title }}</h3>
+            <p>{{ project.second_paragraph.text }}</p>
+
+            <h3>{{ project.third_paragraph.title }}</h3>
+            <p>{{ project.third_paragraph.text }}</p>
+        }
     </div>
 
-    <app-page-corners prevPath="projects/all" nextPath="bonus/passions/1"/>
+    <app-page-corners [prevPath]=getPrevPage() [nextPath]=getNextPage() />
 </div>

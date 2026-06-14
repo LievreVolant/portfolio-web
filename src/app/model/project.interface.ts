@@ -1,5 +1,5 @@
 interface ProjectData {
-    id: string;
+    id: number;
     title: string;
     isFavorite: boolean;
     description: string;
@@ -8,7 +8,6 @@ interface ProjectData {
     second_paragraph: ParagraphData;
     third_paragraph: ParagraphData;
     languages: string[];
-    images: DocumentData[];
     documents: DocumentData[];
     links: LinkData[];
 }
@@ -16,6 +15,7 @@ interface ProjectData {
 interface ParagraphData {
     title: string;
     text: string;
+    images: DocumentData[];
 }
 
 interface DocumentData {
