@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
-import {ICON_SRC, LINKS} from '../constants';
+import {ICON_SRC, LINKS, LANGUAGE_DATA} from '../constants';
 import projectsData from '../data/projects.json';
+import type { LanguageData, ProjectData } from '../model/project.interface';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProjectsService {
     readonly iconSrc = ICON_SRC;
@@ -25,7 +26,7 @@ export class ProjectsService {
     }
 
     getLanguagesFromProjects(): string[] {
-        let languages: string[] = [];
+        const languages: string[] = [];
         for (const project of this.projects) {
             for (const language of project.languages) {
                 if (!languages.includes(language)) {
@@ -33,6 +34,10 @@ export class ProjectsService {
                 }
             }
         }
-        return languages.sort();
+        return languages.sort((a, b) => a.localeCompare(b));
+    }
+
+    getLanguageData(language: string): LanguageData {
+        return LANGUAGE_DATA[language];
     }
 }

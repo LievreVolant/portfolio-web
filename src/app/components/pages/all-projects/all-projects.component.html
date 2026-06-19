@@ -5,15 +5,15 @@
         <div class="div-languages">
             @for (language of leftPageLanguages; track language) {
                 <div class="div-language">
-                    <a [href]="links.angular" target="_blank">
-                        <img [title]="language" [alt]="language+' icon'" [src]="iconSrc.angular" />
+                    <a [href]="getLanguageData(language).link" target="_blank">
+                        <img [title]="language" [alt]="language+' icon'" [src]="getLanguageData(language).icon" />
                     </a>
                     <div>
                         <h3>{{ language }}</h3>
                         <ul>
                             @for (project of projectsService.getProjectsByLanguage(language); track project) {
-                                <li>
-                                    <a [href]="'projects/all/'+project.id">
+                                <li [style.list-style-image]="project.isFavorite ? 'url(' + imgSrc.coloredStar + ')' : 'url(' + imgSrc.darkFeather + ')'">
+                                    <a [href]="`projects/all/${project.id}`">
                                         <p>{{ project.title }}</p>
                                     </a>
                                 </li>
@@ -30,15 +30,15 @@
         <div class="div-languages">
             @for (language of rightPageLanguages; track language) {
                 <div class="div-language">
-                    <a [href]="links.angular" target="_blank">
-                        <img [title]="language" [alt]="language+' icon'" [src]="iconSrc.angular"/>
+                    <a [href]="getLanguageData(language).link" target="_blank">
+                        <img [title]="language" [alt]="language+' icon'" [src]="getLanguageData(language).icon"/>
                     </a>
                     <div>
                         <h3>{{ language }}</h3>
                         <ul>
                             @for (project of projectsService.getProjectsByLanguage(language); track project) {
-                                <li>
-                                    <a [href]="'projects/all/'+project.id">
+                                <li [style.list-style-image]="project.isFavorite ? 'url(' + imgSrc.coloredStar + ')' : 'url(' + imgSrc.darkFeather + ')'">
+                                    <a [href]="`projects/all/${project.id}`">
                                         <p>{{ project.title }}</p>
                                     </a>
                                 </li>

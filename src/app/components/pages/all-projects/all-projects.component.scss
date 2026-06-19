@@ -13,9 +13,23 @@
 .div-language {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .div-language img {
     display: flex;
-    height: calc(var(--book-page-height) * 0.15);
+    width: calc(var(--book-page-width) * 0.17);
+}
+
+ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, 33px);
+    gap: 0 50px;
+    margin: 0 0 0 20px;
+}
+
+li {
+    display: list-item;
+    width: 100%;
 }

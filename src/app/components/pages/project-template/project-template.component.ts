@@ -3,6 +3,7 @@ import {PageCornersComponent} from '../../shared/page-corners/page-corners.compo
 import {IMG_SRC} from '../../../constants';
 import { ActivatedRoute } from '@angular/router';
 import {ProjectsService} from '../../../services/projects.service';
+import { ProjectData } from '../../../model/project.interface';
 
 @Component({
   selector: 'app-project-template',
@@ -18,7 +19,7 @@ export class ProjectTemplateComponent implements OnInit {
     project: ProjectData | undefined;
     nbProjects: number = 0;
 
-    constructor(private readonly route: ActivatedRoute, private projectsService: ProjectsService) { }
+    constructor(private readonly route: ActivatedRoute, private readonly projectsService: ProjectsService) { }
 
     ngOnInit(): void {
         this.route.paramMap.subscribe((param) => {

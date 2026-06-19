@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {PageCornersComponent} from '../../shared/page-corners/page-corners.component';
-import { ICON_SRC, LINKS } from '../../../constants';
 import {ProjectsService} from '../../../services/projects.service';
+import { IMG_SRC } from '../../../constants';
 
 @Component({
   selector: 'app-all-projects',
@@ -12,9 +12,7 @@ import {ProjectsService} from '../../../services/projects.service';
   styleUrl: './all-projects.component.scss',
 })
 export class AllProjectsComponent implements OnInit {
-    readonly iconSrc = ICON_SRC;
-    readonly links = LINKS;
-
+    protected readonly imgSrc = IMG_SRC;
     leftPageLanguages: string[] = [];
     rightPageLanguages: string[] = [];
     ignoredLanguages: string[] = ['SQL', 'UML', 'PHP', 'XAML', 'GraphQl', 'Dart', 'TypeScript'];
@@ -24,9 +22,13 @@ export class AllProjectsComponent implements OnInit {
 
     ngOnInit() {
         this.nbProjects = this.projectsService.getNbProjects();
-        let languages = this.projectsService.getLanguagesFromProjects().filter((language) => {return !this.ignoredLanguages.includes(language); });
+        const languages = this.projectsService.getLanguagesFromProjects().filter((language) => {return !this.ignoredLanguages.includes(language); });
         const halfOfLanguages = languages.length/2;
         this.leftPageLanguages = languages.slice(0, halfOfLanguages);
         this.rightPageLanguages = languages.slice(halfOfLanguages, languages.length);
+    }
+
+    getLanguageData(language: string) {
+        return this.projectsService.getLanguageData(language);
     }
 }

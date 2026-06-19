@@ -1,4 +1,4 @@
-interface ProjectData {
+export interface ProjectData {
     id: number;
     title: string;
     isFavorite: boolean;
@@ -26,4 +26,10 @@ interface DocumentData {
 interface LinkData {
     title: string;
     link: string;
+}
+
+export interface LanguageData {
+    name: string;
+    link: string;
+    icon: string;
 }

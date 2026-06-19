@@ -2,6 +2,8 @@ import {Component} from '@angular/core';
 import {PageCornersComponent} from '../../shared/page-corners/page-corners.component';
 import {RouterLink} from '@angular/router';
 import projectsData from '../../../data/projects.json';
+import { ProjectData } from '../../../model/project.interface';
+import { IMG_SRC } from '../../../constants';
 
 @Component({
   selector: 'app-summary',
@@ -13,5 +15,6 @@ import projectsData from '../../../data/projects.json';
   styleUrl: './summary.component.scss',
 })
 export class SummaryComponent {
+    protected readonly imgSrc = IMG_SRC;
     projectsData: ProjectData[] = projectsData;
 }
