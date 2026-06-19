@@ -1,118 +1,48 @@
 <div class="div-pages">
     <!-- Left Page -->
     <div class="div-left-page">
-        <h1>< Tous mes projets ></h1>
+        <h2>< Mes Projets par Langage ou Framework ></h2>
         <div class="div-languages">
-            <div class="div-language">
-                <a [href]="links.angular" target="_blank"><img [src]="iconSrc.angular" /></a>
-                <div>
-                    <h3>Angular</h3>
-                    @for (project of projectsData; track project) {
-                        @if (project.languages.includes("Angular")) {
-                            <a [href]="'projects/all/'+project.id">
-                                <p>{{ project.title }}</p>
-                            </a>
-                        }
-                    }
+            @for (language of leftPageLanguages; track language) {
+                <div class="div-language">
+                    <a [href]="links.angular" target="_blank"><img [src]="iconSrc.angular" /></a>
+                    <div>
+                        <h3>{{ language }}</h3>
+                        <ul>
+                            @for (project of projectsService.getProjectsByLanguage(language); track project) {
+                                <li>
+                                    <a [href]="'projects/all/'+project.id">
+                                        <p>{{ project.title }}</p>
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="div-language">
-                <a [href]="links.csharp" target="_blank"><img [src]="iconSrc.csharp" /></a>
-                <div>
-                    <h3>C#</h3>
-                    @for (project of projectsData; track project) {
-                        @if (project.languages.includes("C#")) {
-                            <a [href]="'projects/all/'+project.id">
-                                <p>{{ project.title }}</p>
-                            </a>
-                        }
-                    }
-                </div>
-            </div>
-            <div class="div-language">
-                <a [href]="links.flutter" target="_blank"><img [src]="iconSrc.flutter" /></a>
-                <div>
-                    <h3>Flutter</h3>
-                    @for (project of projectsData; track project) {
-                        @if (project.languages.includes("Flutter")) {
-                            <a [href]="'projects/all/'+project.id">
-                                <p>{{ project.title }}</p>
-                            </a>
-                        }
-                    }
-                </div>
-            </div>
-            <div class="div-language">
-                <a [href]="links.python" target="_blank"><img [src]="iconSrc.python" /></a>
-                <div>
-                    <h3>Python</h3>
-                    @for (project of projectsData; track project) {
-                        @if (project.languages.includes("Python")) {
-                            <a [href]="'projects/all/'+project.id">
-                                <p>{{ project.title }}</p>
-                            </a>
-                        }
-                    }
-                </div>
-            </div>
+            }
         </div>
     </div>
 
     <!-- Right Page -->
     <div class="div-right-page">
         <div class="div-languages">
-            <div class="div-language">
-                <a [href]="links.angular" target="_blank"><img [src]="iconSrc.angular" /></a>
-                <div>
-                    <h3>Angular</h3>
-                    @for (project of projectsData; track project) {
-                        @if (project.languages.includes("Angular")) {
-                            <a [href]="'projects/all/'+project.id">
-                                <p>{{ project.title }}</p>
-                            </a>
-                        }
-                    }
+            @for (language of rightPageLanguages; track language) {
+                <div class="div-language">
+                    <a [href]="links.angular" target="_blank"><img [src]="iconSrc.angular" /></a>
+                    <div>
+                        <h3>{{ language }}</h3>
+                        <ul>
+                            @for (project of projectsService.getProjectsByLanguage(language); track project) {
+                                <li>
+                                    <a [href]="'projects/all/'+project.id">
+                                        <p>{{ project.title }}</p>
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="div-language">
-                <a [href]="links.csharp" target="_blank"><img [src]="iconSrc.csharp" /></a>
-                <div>
-                    <h3>C#</h3>
-                    @for (project of projectsData; track project) {
-                        @if (project.languages.includes("C#")) {
-                            <a [href]="'projects/all/'+project.id">
-                                <p>{{ project.title }}</p>
-                            </a>
-                        }
-                    }
-                </div>
-            </div>
-            <div class="div-language">
-                <a [href]="links.flutter" target="_blank"><img [src]="iconSrc.flutter" /></a>
-                <div>
-                    <h3>Flutter</h3>
-                    @for (project of projectsData; track project) {
-                        @if (project.languages.includes("Flutter")) {
-                            <a [href]="'projects/all/'+project.id">
-                                <p>{{ project.title }}</p>
-                            </a>
-                        }
-                    }
-                </div>
-            </div>
-            <div class="div-language">
-                <a [href]="links.python" target="_blank"><img [src]="iconSrc.python" /></a>
-                <div>
-                    <h3>Python</h3>
-                    @for (project of projectsData; track project) {
-                        @if (project.languages.includes("Python")) {
-                            <a [href]="'projects/all/'+project.id">
-                                <p>{{ project.title }}</p>
-                            </a>
-                        }
-                    }
-                </div>
-            </div>
+            }
         </div>
     </div>
 

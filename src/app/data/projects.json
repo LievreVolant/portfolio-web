@@ -26,8 +26,7 @@
         },
         "languages":[
             "PHP",
-            "HTML",
-            "CSS",
+            "HTML / CSS",
             "JavaScript",
             "SQL"
         ],
@@ -103,8 +102,7 @@
         },
         "languages":[
             "JavaScript",
-            "HTML",
-            "CSS"
+            "HTML / CSS"
         ],
         "documents":[
         ],
@@ -195,8 +193,7 @@
         "languages":[
             "Angular",
             "TypeScript",
-            "HTML",
-            "SCSS",
+            "HTML / CSS",
             "GraphQl"
         ],
         "documents":[
@@ -265,8 +262,7 @@
         "languages":[
             "Angular",
             "TypeScript",
-            "HTML",
-            "SCSS"
+            "HTML / CSS"
         ],
         "documents":[
         ],

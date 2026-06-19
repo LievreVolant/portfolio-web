@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {PageCornersComponent} from '../../shared/page-corners/page-corners.component';
 import {IMG_SRC} from '../../../constants';
-import projectsData from '../../../data/projects.json';
 import { ActivatedRoute } from '@angular/router';
+import {ProjectsService} from '../../../services/projects.service';
 
 @Component({
   selector: 'app-project-template',
@@ -15,15 +15,15 @@ import { ActivatedRoute } from '@angular/router';
 export class ProjectTemplateComponent implements OnInit {
     protected readonly imgSrc = IMG_SRC;
     projectId: number | null = null;
-    project: ProjectData | null = null;
+    project: ProjectData | undefined;
 
-    constructor(private readonly route: ActivatedRoute) { }
+    constructor(private readonly route: ActivatedRoute, private projectsService: ProjectsService) { }
 
     ngOnInit(): void {
         this.route.paramMap.subscribe((param) => {
             this.projectId = Number(param.get('projectId'));
             if (this.projectId) {
-                this.project = projectsData.find(p => p.id === this.projectId) ?? null;
+                this.project = this.projectsService.getProjectById(this.projectId);
             }
         });
     }
