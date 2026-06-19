@@ -87,8 +87,13 @@ ul {
     list-style: url("/assets/images/icons/tabs/feather-dark.png");
 }
 
+li {
+    margin: 10px 0;
+}
+
 li a {
-    top: -50px;
+    display: block;
+    transform: translateY(-5px);
 }
 
 ::selection, ::-moz-selection {
