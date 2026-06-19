@@ -12,6 +12,10 @@ export class ProjectsService {
 
     constructor() {}
 
+    getNbProjects(): number {
+        return this.projects.length;
+    }
+
     getProjectById(id: number): ProjectData | undefined {
         return this.projects.find(project => project.id === id) ?? undefined;
     }

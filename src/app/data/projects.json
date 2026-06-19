@@ -37,38 +37,6 @@
     },
     {
         "id":2,
-        "title":"Deus Ex Machina",
-        "isFavorite":false,
-        "cover_source": "",
-        "description":"Ce jeu est encore à l'étape de conception, il sera réalisé par moi et 3 de mes amis, chacun nous occupant de notre spécialité: code, dessin, musique... \nNous comptons organiser un \"bootcamp\" cet été où nous projetons d'en développer une démo en une semaine.",
-        "goals":"",
-        "first_paragraph":{
-            "title":"",
-            "text":"",
-            "images": [
-            ]
-        },
-        "second_paragraph":{
-            "title":"",
-            "text":"",
-            "images": [
-            ]
-        },
-        "third_paragraph":{
-            "title":"",
-            "text":"",
-            "images": [
-            ]
-        },
-        "languages":[
-        ],
-        "documents":[
-        ],
-        "links":[
-        ]
-    },
-    {
-        "id":3,
         "title":"Alchi'Mix",
         "isFavorite":false,
         "cover_source": "",
@@ -114,7 +82,7 @@
         ]
     },
     {
-        "id":4,
+        "id":3,
         "title":"Carnet de recherche de stage",
         "isFavorite":false,
         "cover_source": "",
@@ -150,7 +118,7 @@
         ]
     },
     {
-        "id":5,
+        "id":4,
         "title":"BloomyFleet",
         "isFavorite":false,
         "cover_source": "",
@@ -202,7 +170,7 @@
         ]
     },
     {
-        "id":6,
+        "id":5,
         "title":"La Sorcière des Ombres",
         "isFavorite":true,
         "cover_source": "",
@@ -235,11 +203,46 @@
         ]
     },
     {
-        "id":7,
+        "id":6,
         "title":"Ce Portfolio",
         "isFavorite":true,
         "cover_source": "",
         "description":"Ce portfolio est aussi un projet en lien avec le BUT. Nous avions comme consigne de réaliser un portfolio web professionnel et/ou qui nous représente. Je l'ai réalisé en Angular.",
+        "goals":"",
+        "first_paragraph":{
+            "title":"",
+            "text":"",
+            "images": [
+            ]
+        },
+        "second_paragraph":{
+            "title":"",
+            "text":"",
+            "images": [
+            ]
+        },
+        "third_paragraph":{
+            "title":"",
+            "text":"",
+            "images": [
+            ]
+        },
+        "languages":[
+            "Angular",
+            "TypeScript",
+            "HTML / CSS"
+        ],
+        "documents":[
+        ],
+        "links":[
+        ]
+    },
+    {
+        "id":7,
+        "title":"Tour of Heroes",
+        "isFavorite":true,
+        "cover_source": "",
+        "description":"",
         "goals":"",
         "first_paragraph":{
             "title":"",

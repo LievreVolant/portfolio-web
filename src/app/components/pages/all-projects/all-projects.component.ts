@@ -18,10 +18,12 @@ export class AllProjectsComponent implements OnInit {
     leftPageLanguages: string[] = [];
     rightPageLanguages: string[] = [];
     ignoredLanguages: string[] = ["SQL", "UML", "PHP", "XAML", "GraphQl", "Dart", "TypeScript"];
+    nbProjects: number = 0;
 
     constructor(protected projectsService: ProjectsService) {}
 
     ngOnInit() {
+        this.nbProjects = this.projectsService.getNbProjects();
         let languages = this.projectsService.getLanguagesFromProjects().filter((language) => {return !this.ignoredLanguages.includes(language); });
         let halfOfLanguages = languages.length/2;
         this.leftPageLanguages = languages.slice(0, halfOfLanguages);

@@ -16,6 +16,7 @@ export class ProjectTemplateComponent implements OnInit {
     protected readonly imgSrc = IMG_SRC;
     projectId: number | null = null;
     project: ProjectData | undefined;
+    nbProjects: number = 0;
 
     constructor(private readonly route: ActivatedRoute, private projectsService: ProjectsService) { }
 
@@ -26,21 +27,22 @@ export class ProjectTemplateComponent implements OnInit {
                 this.project = this.projectsService.getProjectById(this.projectId);
             }
         });
+        this.nbProjects = this.projectsService.getNbProjects();
     }
 
     getPrevPage(): string {
-        if (this.projectId! <= 1) {
+        if (this.projectId! >= this.nbProjects) {
             return 'projects/all';
         } else {
-            return `projects/all/${this.projectId!-1}`;
+            return `projects/all/${this.projectId!+1}`;
         }
     }
 
     getNextPage(): string {
-        if (this.projectId! >= 9) {
+        if (this.projectId! <= 1) {
             return 'bonus/passions/1';
         } else {
-            return `projects/all/${this.projectId!+1}`;
+            return `projects/all/${this.projectId!-1}`;
         }
     }
 }

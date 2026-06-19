@@ -5,7 +5,9 @@
         <div class="div-languages">
             @for (language of leftPageLanguages; track language) {
                 <div class="div-language">
-                    <a [href]="links.angular" target="_blank"><img [src]="iconSrc.angular" /></a>
+                    <a [href]="links.angular" target="_blank">
+                        <img [title]="language" [alt]="language+' icon'" [src]="iconSrc.angular" />
+                    </a>
                     <div>
                         <h3>{{ language }}</h3>
                         <ul>
@@ -28,7 +30,9 @@
         <div class="div-languages">
             @for (language of rightPageLanguages; track language) {
                 <div class="div-language">
-                    <a [href]="links.angular" target="_blank"><img [src]="iconSrc.angular" /></a>
+                    <a [href]="links.angular" target="_blank">
+                        <img [title]="language" [alt]="language+' icon'" [src]="iconSrc.angular"/>
+                    </a>
                     <div>
                         <h3>{{ language }}</h3>
                         <ul>
@@ -46,5 +50,5 @@
         </div>
     </div>
 
-    <app-page-corners prevPath="projects" nextPath="projects/all/1"/>
+    <app-page-corners prevPath="projects" [nextPath]="`projects/all/${nbProjects}`"/>
 </div>
