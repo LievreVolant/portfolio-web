@@ -1,0 +1,61 @@
+.div-left-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div-languages {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+}
+
+.div-language {
+    position: relative;
+    display: inline-flex;
+}
+
+img {
+    width: calc(var(--book-page-width) * 0.14);
+}
+
+.img-star {
+    position: absolute;
+    z-index: 10;
+    top: -10px;
+    width: 40px;
+}
+
+.img-star-blue {
+    right: -10px;
+}
+
+.img-star-yellow {
+    right: -25px;
+}
+
+.div-end-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: end;
+    margin-bottom: -15px;
+}
+
+.div-legends {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-legend {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.img-legend {
+    width: calc(var(--book-page-width) * 0.07);
+}

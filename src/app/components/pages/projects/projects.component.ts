@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import {PageCornersComponent} from '../../shared/page-corners/page-corners.component';
 import {IMG_SRC} from '../../../constants';
-import recentProjectsData from '../../../data/recent-project-descriptions.json';
 import {RouterLink} from '@angular/router';
 
 @Component({
@@ -15,5 +14,4 @@ import {RouterLink} from '@angular/router';
 })
 export class ProjectsComponent {
     readonly imgSrc = IMG_SRC;
-    protected readonly recentProjectsData = recentProjectsData;
 }

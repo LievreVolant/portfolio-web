@@ -2,6 +2,33 @@
     <!-- Left Page -->
     <div class="div-left-page">
         <h2>< Mes Compétences en Informatique ></h2>
+        <div class="div-languages">
+            @for (language of languages; track language) {
+                <div class="div-language">
+                    @if (projectLanguages.includes(language)) {
+                        <img class="img-star img-star-blue" title="Mes compétences sur ce langage sont illustrées dans l'un de mes projet" alt="blue star" [src]="imgSrc.bigBlueStar" />
+                    }
+                    @if (favoriteLanguages.includes(language)) {
+                        <img class="img-star img-star-yellow" title="L'un des langages que je connais le mieux" alt="yellow star" [src]="imgSrc.bigYellowStar"/>
+                    }
+                    <a [href]="getLanguageData(language).link" target="_blank">
+                        <img [title]="language" [alt]="language+' icon'" [src]="getLanguageData(language).icon" />
+                    </a>
+                </div>
+            }
+        </div>
+        <div class="div-end-page">
+            <div class="div-legends">
+                <div class="div-legend">
+                    <img class="img-legend" alt="yellow star" [src]="imgSrc.bigYellowStar" />
+                    <p> : Langages que je connais le mieux</p>
+                </div>
+                <div class="div-legend">
+                    <img class="img-legend" alt="blue star" [src]="imgSrc.bigBlueStar" />
+                    <p> : Langages illustrés dans mes projet</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Right Page -->
