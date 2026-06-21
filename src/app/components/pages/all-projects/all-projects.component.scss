@@ -22,6 +22,7 @@
 }
 
 ul {
+    list-style: url("/assets/images/icons/tabs/feather-dark.png");
     display: grid;
     grid-auto-flow: column;
     grid-template-rows: repeat(3, 33px);
@@ -32,4 +33,10 @@ ul {
 li {
     display: list-item;
     width: 100%;
+    margin: 10px 0;
+}
+
+li a {
+    display: block;
+    transform: translateY(-5px);
 }

@@ -83,19 +83,6 @@ a:hover {
     text-decoration-color: $black;
 }
 
-ul {
-    list-style: url("/assets/images/icons/tabs/feather-dark.png");
-}
-
-li {
-    margin: 10px 0;
-}
-
-li a {
-    display: block;
-    transform: translateY(-5px);
-}
-
 ::selection, ::-moz-selection {
     background: rgba($dark-grey, 0.3);
 }
