@@ -9,7 +9,7 @@
                         <img class="img-star img-star-blue" title="Mes compétences sur ce langage sont illustrées dans l'un de mes projet" alt="blue star" [src]="imgSrc.bigBlueStar" />
                     }
                     @if (favoriteLanguages.includes(language)) {
-                        <img class="img-star img-star-yellow" title="L'un des langages que je connais le mieux" alt="yellow star" [src]="imgSrc.bigYellowStar"/>
+                        <img class="img-star img-star-yellow" title="L'un des langages que je maîtrise le mieux" alt="yellow star" [src]="imgSrc.bigYellowStar"/>
                     }
                     <a [href]="getLanguageData(language).link" target="_blank">
                         <img [title]="language" [alt]="language+' icon'" [src]="getLanguageData(language).icon" />
@@ -21,7 +21,7 @@
             <div class="div-legends">
                 <div class="div-legend">
                     <img class="img-legend" alt="yellow star" [src]="imgSrc.bigYellowStar" />
-                    <p> : Langages que je connais le mieux</p>
+                    <p> : Langages que je maîtrise le mieux</p>
                 </div>
                 <div class="div-legend">
                     <img class="img-legend" alt="blue star" [src]="imgSrc.bigBlueStar" />
