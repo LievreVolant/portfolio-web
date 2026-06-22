@@ -19,9 +19,9 @@
                     @for (project of projectsData; track project.id) {
                         <a [routerLink]="`/projects/all/${project.id}`">
                             <h3>
-                                {{ project.title }} 
+                                {{ project.title }}
                                 @if (project.isFavorite) {
-                                    <img alt="star" [src]="imgSrc.coloredStar">
+                                    <img title="L'un de mes projets favoris" alt="star" [src]="imgSrc.coloredStar">
                                 }
                             </h3>
                         </a>

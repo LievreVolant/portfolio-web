@@ -1,3 +1,8 @@
+.spaced-vertical {
+    height: 80%;
+    justify-content: space-between;
+}
+
 .grid-education {
     display: grid;
     grid-template-columns: 50px 1px 1fr;

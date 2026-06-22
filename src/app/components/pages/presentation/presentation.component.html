@@ -7,10 +7,11 @@
         </div>
         <h2>< Présentation ></h2>
         <p>
-            Comme vous le savez sans doute déjà si vous lisez ces mots, je m'appelle Lili et je suis développeuse. Je me passionne depuis petite pour les jeux-vidéos et l'informatique, je suis extrêment curieuse et j'aime énormément apprendre de nouveaux langages et de nouvelles façon de développer avec ceux que je connais déjà. En ce moment je me passionne à apprendre comment développer des jeux pouvant fonctionner sur des consoles rétro comme la Gamecube ou la 3DS.
+            Comme vous le savez sans doute déjà si vous lisez ces lignes, je m'appelle Lili et je suis développeuse. Je me passionne depuis petite pour les jeux-vidéos et l'informatique, je suis extrêment curieuse et j'aime énormément apprendre de nouveaux langages, de nouvelles façon de développer et de produire un code propre et maintenable. En ce moment je me passionne à apprendre comment développer des jeux pouvant fonctionner sur des consoles rétro comme la Gamecube ou la 3DS.
         </p>
-        <a routerLink="/contact"><p><mark class="mark-color7">Amusez-vous à parcourir mon portfolio et n'hésitez pas à me contacter pour quelconque projet !</mark></p></a>
-
+        <p>Amusez-vous à parcourir mon portfolio et n'hésitez pas à me <a routerLink="/contact"><mark class="mark-color7">contacter</mark></a> pour quelconque projet !</p>
+        <br>
+        <br>
         <h2>< Langages de prédilection ></h2>
         <div class="div-languages">
             <a [href]="links.angular" target="_blank"><img title="Angular" alt="Angular" class="img-sticker clickable" [src]="iconSrc.angular"></a>
@@ -21,35 +22,38 @@
 
     <!-- Right Page -->
     <div class="div-right-page">
-        <div>
-            <h2>< Actuellement ></h2>
-            <h3>Développeuse C# Alternante chez <a [href]="links.corys" target="_blank"><mark class="mark-color6">Corys</mark></a> & Étudiante en <a [href]="links.but" target="_blank"><mark class="mark-color4">BUT informatique</mark></a></h3>
-            <p>
-                Je suis actuellement troisème année de BUT Informatique, je réalise la dernière année de mon diplôme en alternance chez Corys. Au cours de mon alternance j'ai pu conclure le développement d'une application en C# et WPF.
-            </p>
-            <p>L'an prochain je rentre en <a [href]="links.miashs" target="_blank"><mark class="mark-color2">Master MIASHS à l'UGA</mark></a>.</p>
-        </div>
-        <div>
-            <h2>< Projets en cours ></h2>
-            <div class="div-projects">
-                <div class="div-project">
-                    <a [routerLink]="'/projects/all/' + recentProjectsData[0].id" class="block">
-                        <div class="div-img rotated-left">
-                            <img [title]="recentProjectsData[0].title" [alt]="recentProjectsData[0].title" class="img-picture-small" [src]="recentProjectsData[0].coverImg">
-                        </div>
-                    </a>
-                    <a [routerLink]="'/projects/all/' + recentProjectsData[0].id"><h3><mark class="mark-color4">{{ recentProjectsData[0].title }}</mark></h3></a>
-                    <p>{{ recentProjectsData[0].description }}</p>
-                </div>
+        <div class="spaced-vertical">
+            <div>
+                <h2>< Actuellement ></h2>
+                <h3>Développeuse C# Alternante chez <a [href]="links.corys" target="_blank"><mark class="mark-color6">Corys</mark></a> & Étudiante en <a [href]="links.but" target="_blank"><mark class="mark-color4">BUT informatique</mark></a></h3>
+                <p>
+                    Je suis actuellement en fin de troisième année de BUT Informatique, je réalise la dernière année de mon diplôme en alternance chez Corys.
+                    Au cours de mon alternance j'ai pu conclure le développement d'une application en C# et WPF.
+                </p>
+                <p>Je rentre l'an prochain en <a [href]="links.miashs" target="_blank"><mark class="mark-color2">Master MIASHS à l'UGA</mark></a>.</p>
+            </div>
 
-                <div class="div-project">
-                    <a [routerLink]="'/projects/all/' + recentProjectsData[1].id" class="block">
-                        <div class="div-img rotated-right">
-                            <img [title]="recentProjectsData[1].title" [alt]="recentProjectsData[1].title" class="img-picture-small" [src]="recentProjectsData[1].coverImg">
-                        </div>
-                    </a>
-                    <a [routerLink]="'/projects/all/' + recentProjectsData[1].id"><h3><mark class="mark-color3">{{ recentProjectsData[1].title }}</mark></h3></a>
-                    <p>{{ recentProjectsData[1].description }}</p>
+            <div>
+                <h2>< Projets en cours ></h2>
+                <div class="div-projects">
+                    <div class="div-project">
+                        <a [routerLink]="'/projects/all/' + recentProjectsData[0].id" class="block">
+                            <div class="div-img rotated-left">
+                                <img [title]="recentProjectsData[0].title" [alt]="recentProjectsData[0].title" class="img-picture-small" [src]="recentProjectsData[0].coverImg">
+                            </div>
+                        </a>
+                        <a [routerLink]="'/projects/all/' + recentProjectsData[0].id"><h3><mark class="mark-color4">{{ recentProjectsData[0].title }}</mark></h3></a>
+                        <p>{{ recentProjectsData[0].description }}</p>
+                    </div>
+                    <div class="div-project">
+                        <a [routerLink]="'/projects/all/' + recentProjectsData[1].id" class="block">
+                            <div class="div-img rotated-right">
+                                <img [title]="recentProjectsData[1].title" [alt]="recentProjectsData[1].title" class="img-picture-small" [src]="recentProjectsData[1].coverImg">
+                            </div>
+                        </a>
+                        <a [routerLink]="'/projects/all/' + recentProjectsData[1].id"><h3><mark class="mark-color3">{{ recentProjectsData[1].title }}</mark></h3></a>
+                        <p>{{ recentProjectsData[1].description }}</p>
+                    </div>
                 </div>
             </div>
         </div>
