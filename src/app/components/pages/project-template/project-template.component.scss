@@ -1,4 +1,17 @@
+.div-right-page {
+    height: 100%;
+}
+
 .div-languages {
     display: flex;
     gap: 10px;
+}
+
+.img-language {
+    height: calc(var(--book-page-height) * 0.05);
+}
+
+.bottom {
+    position: absolute;
+    bottom:0;
 }

@@ -31,6 +31,10 @@ export class ProjectTemplateComponent implements OnInit {
         this.nbProjects = this.projectsService.getNbProjects();
     }
 
+    getLanguageData(language: string) {
+        return this.projectsService.getLanguageData(language);
+    }
+
     getPrevPage(): string {
         if (this.projectId! >= this.nbProjects) {
             return 'projects/all';

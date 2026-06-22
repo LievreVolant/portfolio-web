@@ -3,7 +3,7 @@
         "id":1,
         "title":"Chât'Odyssée",
         "isFavorite":true,
-        "cover_source": "",
+        "timeline": "novembre 2024 - février 2025",
         "description":"Chât'Odyssée est une application web de carnet de voyage où chacun peut consigner ses expéditions dans les châteaux de la région Auvergne-Rhônes-Alpes ainsi que se renseigner sur les prochains château à visiter. Ce projet fût réalisé en équipe de 6 dans le cadre de la \"SAE\" du troisième semestre du BUT dont le thème était \"Valoriser le patrimoine culturelle\".",
         "goals":"Mener un projet de A à Z en équipe, en passant par le cadrage du projet, la conception et la réalisation.",
         "first_paragraph":{
@@ -39,7 +39,7 @@
         "id":2,
         "title":"Alchi'Mix",
         "isFavorite":false,
-        "cover_source": "",
+        "timeline": "mars 2025",
         "description":"Alchi'Mix est une application permettant de consulter les données de l'API TheCocktailDB, elle permet également de créer ses propres cocktails de façon ludique. Nous avons réalisé cette application en équipe de 3.",
         "goals":"",
         "first_paragraph":{
@@ -85,7 +85,7 @@
         "id":3,
         "title":"Carnet de recherche de stage",
         "isFavorite":false,
-        "cover_source": "",
+       "timeline": "mars - avril 2025",
         "description":"",
         "goals":"",
         "first_paragraph":{
@@ -121,7 +121,7 @@
         "id":4,
         "title":"BloomyFleet",
         "isFavorite":false,
-        "cover_source": "",
+       "timeline": "mai - juin 2025",
         "description":"BloomyFleet est l'application que j'ai réalisé au cours de mon stage de fin de deuxième année de BUT. J'ai réalisé cette mission chez CBA Informatique Libérale à Avignon. BloomyFleet permets aux développeurs et au personnel du SAV de CBA de contrôler facilement le parc des \"Bloomy\" de l'entreprise. Nous avons réalisé cette application en binôme avec un autre stagiaire de l'entreprise, lui s'occupant du back-end et moi du front-end. À l'image du reste des équipe de l'entreprise nous avons travaillé selon la méthode agile Scrum",
         "goals":"",
         "first_paragraph":{
@@ -173,7 +173,7 @@
         "id":5,
         "title":"La Sorcière des Ombres",
         "isFavorite":true,
-        "cover_source": "",
+       "timeline": "septembre 2025",
         "description":"Projet réalisé dans le cadre de la GameJam de rentrée en troisième année de BUT. En équipe de 6 nous avons pu développer un jeu en Python autour du thème du Moyen-Age et de la méchanique de jeu de la disparition.",
         "goals":"",
         "first_paragraph":{
@@ -206,7 +206,7 @@
         "id":6,
         "title":"Ce Portfolio",
         "isFavorite":true,
-        "cover_source": "",
+       "timeline": "septembre 2025 - juin 2026",
         "description":"Ce portfolio est aussi un projet en lien avec le BUT. Nous avions comme consigne de réaliser un portfolio web professionnel et/ou qui nous représente. Je l'ai réalisé en Angular.",
         "goals":"",
         "first_paragraph":{
@@ -241,7 +241,7 @@
         "id":7,
         "title":"Tour of Heroes",
         "isFavorite":true,
-        "cover_source": "",
+       "timeline": "septembre - décembre 2025",
         "description":"",
         "goals":"",
         "first_paragraph":{
@@ -276,7 +276,7 @@
         "id":8,
         "title":"IndissPlus Launcher",
         "isFavorite":false,
-        "cover_source": "",
+       "timeline": "octobre 2025 - août 2026",
         "description":"",
         "goals":"",
         "first_paragraph":{
@@ -310,24 +310,24 @@
         "id":9,
         "title":"Awesome Minesweeper",
         "isFavorite":true,
-        "cover_source": "",
-        "description":"À l'origine un projet de cours pour nous faire découvrir Dart et Flutter. J'ai adoré développer une application que je pouvais lancer sur mon téléphone et partager à mes amis et j'ai donc poursuivi le développement du jeu bien plus loin que ce qui était attendu. Awesome Minesweeper m'a permis de découvrir le processus de déploiement d'une application sur le Play Store.",
-        "goals":"Développer un projet de la conception au déploiement, découvrir la publication sur le PlayStore",
+       "timeline": "janvier - avril 2026",
+        "description":"À l'origine un projet de cours pour nous faire découvrir Dart et Flutter. J'ai adoré développer une application que je pouvais lancer sur mon téléphone et partager à mes amis et j'ai donc poursuivi le développement du jeu bien plus loin que ce qui était attendu.",
+        "goals":"Apprendre Dart et Flutter · Développer un projet de la conception au déploiement public",
         "first_paragraph":{
-            "title":"Conception",
-            "text":"",
+            "title":"À venir",
+            "text":"Il reste toujours quelques bugs à régler. Une fois la version actuelle solide j'aimerai la déployer officiellement sur le PlayStore. Une fois cela fait, je rajouterai des mises à jour comme l'ajout de thêmes ou de modes multijoueurs.",
             "images": [
             ]
         },
         "second_paragraph":{
-            "title":"Réalisation",
-            "text":"",
+            "title":"Conception",
+            "text":"La conception de ce projet a démarré par une phase de maquettage",
             "images": [
             ]
         },
         "third_paragraph":{
-            "title":"À venir",
-            "text":"Il reste toujours quelques bugs à régler. Une fois la version actuelle solide j'aimerai la déployer officiellement sur le PlayStore. Une fois cela fait, je rajouterai des mises à jour comme l'ajout de thêmes ou de modes multijoueurs.",
+            "title":"Réalisation",
+            "text":"",
             "images": [
             ]
         },

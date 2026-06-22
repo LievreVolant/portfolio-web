@@ -2,14 +2,24 @@
     <!-- Left Page -->
     <div class="div-left-page">
         @if (project) {
-            <h2>< {{ project.title }}></h2>
+            <div class="spaced">
+                <h2>< {{ project.title }}></h2>
+                <h4>{{ project.timeline }}</h4>
+            </div>
             <div class="div-languages">
                 @for (language of project.languages; track project.languages) {
-                    <p>{{ language }}</p>
+                    <a [href]="getLanguageData(language).link" target="_blank">
+                        <img [title]="language" [alt]="language+' icon'" [src]="getLanguageData(language).icon" class="img-language"/>
+                    </a>
                 }
             </div>
 
             <h3>Présentation</h3>
+            @if (project.first_paragraph.images.length != 0) {
+                <div class="div-img float-right rotated-right img-right">
+                    <img [title]="project.first_paragraph.images[0].title" class="img-picture-medium" [src]="project.first_paragraph.images[0].source">
+                </div>
+            }
             <p>{{ project.description }}</p>
 
             <h3>Objectifs</h3>
@@ -23,11 +33,37 @@
     <!-- Right Page -->
     <div class="div-right-page">
         @if (project) {
-            <h3>{{ project.second_paragraph.title }}</h3>
-            <p>{{ project.second_paragraph.text }}</p>
+            <div>
+                <h3>{{ project.second_paragraph.title }}</h3>
+                @if (project.second_paragraph.images.length != 0) {
+                    <div class="div-img float-left rotated-right img-left">
+                        <img [title]="project.second_paragraph.images[0].title" class="img-picture-medium" [src]="project.second_paragraph.images[0].source">
+                    </div>
+                }
+                <p>{{ project.second_paragraph.text }}</p>
 
-            <h3>{{ project.third_paragraph.title }}</h3>
-            <p>{{ project.third_paragraph.text }}</p>
+                <h3>{{ project.third_paragraph.title }}</h3>
+                @if (project.third_paragraph.images.length != 0) {
+                    <div class="div-img float-right rotated-right img-right">
+                        <img [title]="project.third_paragraph.images[0].title" class="img-picture-medium" [src]="project.third_paragraph.images[0].source">
+                    </div>
+                }
+                <p>{{ project.third_paragraph.text }}</p>
+            </div>
+
+            @if (project.links.length != 0 || project.documents.length != 0) {
+                <div class="bottom">
+                    <h3>Liens et documents supplémentaires</h3>
+                    <div>
+                        @for (link of project.links; track link) {
+                            <a [href]="link.link"><img [title]="link.title" [src]="imgSrc.bigYellowStar"/></a>
+                        }
+                        @for (doc of project.documents; track doc) {
+                            <a><img [title]="doc.title" [src]="imgSrc.bigBlueStar"/></a>
+                        }
+                    </div>
+                </div>
+            }
         }
     </div>
 

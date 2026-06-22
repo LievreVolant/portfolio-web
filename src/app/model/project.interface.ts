@@ -2,6 +2,7 @@ export interface ProjectData {
     id: number;
     title: string;
     isFavorite: boolean;
+    timeline: string;
     description: string;
     goals: string;
     first_paragraph: ParagraphData;
