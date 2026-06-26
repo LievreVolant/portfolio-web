@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {PageCornersComponent} from '../../shared/page-corners/page-corners.component';
-import {IMG_SRC} from '../../../constants';
+import {PRJ_SRC} from '../../../constants';
 import { ActivatedRoute } from '@angular/router';
 import {ProjectsService} from '../../../services/projects.service';
 import { ProjectData } from '../../../model/project.interface';
@@ -14,7 +14,7 @@ import { ProjectData } from '../../../model/project.interface';
   styleUrl: './project-template.component.scss',
 })
 export class ProjectTemplateComponent implements OnInit {
-    protected readonly imgSrc = IMG_SRC;
+    protected readonly imgSrc = PRJ_SRC;
     projectId: number | null = null;
     project: ProjectData | undefined;
     nbProjects: number = 0;

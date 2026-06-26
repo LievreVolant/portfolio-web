@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {PageCornersComponent} from '../../shared/page-corners/page-corners.component';
 import {ProjectsService} from '../../../services/projects.service';
-import { IMG_SRC } from '../../../constants';
+import { PRJ_SRC } from '../../../constants';
 
 @Component({
   selector: 'app-all-projects',
@@ -12,7 +12,7 @@ import { IMG_SRC } from '../../../constants';
   styleUrl: './all-projects.component.scss',
 })
 export class AllProjectsComponent implements OnInit {
-    protected readonly imgSrc = IMG_SRC;
+    protected readonly imgSrc = PRJ_SRC;
     leftPageLanguages: string[] = [];
     rightPageLanguages: string[] = [];
     ignoredLanguages: string[] = ['SQL', 'UML', 'PHP', 'XAML', 'GraphQl', 'Dart', 'TypeScript'];
