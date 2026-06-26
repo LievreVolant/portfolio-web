@@ -81,6 +81,8 @@ export const PRJ_SRC = {
     bigBlueStar: 'assets/images/icons/tabs/star-blue-big.png',
     bigYellowStar: 'assets/images/icons/tabs/star-yellow-big.png',
     coloredStar: 'assets/images/icons/tabs/star-colored.png',
+    doc: 'assets/images/icons/tabs/doc.png',
+    link: 'assets/images/icons/tabs/link.png',
     minesweeper: projectsPath + 'minesweeper/minesweeper-game.png',
     placeholder: 'assets/images/upia/upia_monster.png',
     portfolio: projectsPath + 'portfolio/portfolio.png',

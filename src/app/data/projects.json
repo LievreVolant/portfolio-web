@@ -4,7 +4,7 @@
         "title":"Chât'Odyssée",
         "isFavorite":true,
         "timeline": "novembre 2024 - février 2025",
-        "description":"Chât'Odyssée est une application web de carnet de voyage où chacun peut consigner ses expéditions dans les châteaux de la région Auvergne-Rhônes-Alpes ainsi que se renseigner sur les prochains château à visiter. Ce projet fût réalisé en équipe de 6 dans le cadre de la \"SAE\" du troisième semestre du BUT dont le thème était \"Valoriser le patrimoine culturelle\".",
+        "description":"Chât'Odyssée est une application web de carnet de voyage où chacun peut consigner ses expéditions dans les châteaux de la région Auvergne-Rhône-Alpes ainsi que se renseigner sur les prochains château à visiter. Ce projet fût réalisé en équipe de 6 dans le cadre de la \"SAE\" du troisième semestre du BUT dont le thème était \"Valoriser le patrimoine culturelle\".",
         "goals":"Mener un projet de A à Z en équipe, en passant par le cadrage du projet, la conception et la réalisation.",
         "first_paragraph":{
             "title":"Conception",
@@ -41,18 +41,14 @@
         "isFavorite":false,
         "timeline": "mars 2025",
         "description":"Alchi'Mix est une application permettant de consulter les données de l'API TheCocktailDB, elle permet également de créer ses propres cocktails de façon ludique. Nous avons réalisé cette application en équipe de 3.",
-        "goals":"",
+        "goals":"Effectuer des requêtes API · Utiliser les résultats des requêtes",
         "first_paragraph":{
             "title":"Ma contribution",
-            "text":"Je me suis occupée de la partie création de cocktails. J'ai récupéré les ingrédients grâce au service principal réalisé par une autre membre de notre équipe. J'ai ensuite généré un cocktail aléatoire à afficher : une ilustration aléatoire parmis celles de application et un title constitué d'un préfixe aléatoire et un des ingrédient du cocktail. Nous souhaitions faire en sorte d'afficher les données de l'API si l'utilisateur choississais les ingrédients d'un cocktail existant mais cela nécessitait trop d'appels pour effectuer la correspondance des ingrédients.",
+            "text":"Je me suis occupée de la partie création de cocktails. J'ai récupéré les ingrédients grâce au service principal réalisé par une autre membre de notre équipe. J'ai ensuite généré un cocktail aléatoire à afficher : une illustration aléatoire parmi celles de application et un title constitué d'un préfixe aléatoire et un des ingrédient du cocktail. Nous souhaitions faire en sorte d'afficher les données de l'API si l'utilisateur choisissais les ingrédients d'un cocktail existant mais cela nécessitait trop d'appels pour effectuer la correspondance des ingrédients.",
             "images": [
                 {
                     "title":"Création d'un cocktail",
-                    "source":"public/images/alchimix_crea.png"
-                },
-                {
-                    "title":"Résultat de la création de cocktail",
-                    "source":"public/images/alchimix_res.png"
+                    "source":"assets/images/projects/alchimix/crea.png"
                 }
             ]
         },
@@ -60,6 +56,10 @@
             "title":"",
             "text":"",
             "images": [
+                {
+                    "title":"Résultat de la création de cocktail",
+                    "source":"assets/images/projects/alchimix/res.png"
+                }
             ]
         },
         "third_paragraph":{
@@ -85,7 +85,7 @@
         "id":3,
         "title":"Carnet de recherche de stage",
         "isFavorite":false,
-       "timeline": "mars - avril 2025",
+        "timeline": "mars - avril 2025",
         "description":"",
         "goals":"",
         "first_paragraph":{
@@ -121,41 +121,37 @@
         "id":4,
         "title":"BloomyFleet",
         "isFavorite":false,
-       "timeline": "mai - juin 2025",
+        "timeline": "mai - juin 2025",
         "description":"BloomyFleet est l'application que j'ai réalisé au cours de mon stage de fin de deuxième année de BUT. J'ai réalisé cette mission chez CBA Informatique Libérale à Avignon. BloomyFleet permet aux développeurs et au personnel du SAV de CBA de contrôler facilement le parc des \"Bloomy\" de l'entreprise. Nous avons réalisé cette application en binôme avec un autre stagiaire de l'entreprise, lui s'occupant du back-end et moi du front-end. À l'image du reste des équipes de l'entreprise nous avons travaillé selon la méthode agile Scrum",
         "goals":"",
         "first_paragraph":{
-            "title":"Réalisation",
-            "text":"J'ai développé le front de l'aplication en Angular et GraphQL pour les appels à la base de données. J'ai appris de zéro Angular, TypeScript et GraphQl pour cette mission, ce qui l'a rendue extrêment interressante et bénéfique pour moi. J'ai également pu appliquer ce que j'avais appris en cours plus tôt dans l'année sur les méthodes agiles et les logiciels de gestion de projet tels Jira et ClickUp. J'ai énormément appris durant ces 2 mois sur absolument tout les plans possibles et je suis très reconnaissante de l'expérience qu'il m'a apportée.",
+            "title":"",
+            "text":"",
             "images": [
                 {
                     "title":"Liste des Bloomy",
-                    "source":"public/images/bloomy_bloomydetails.png"
-                },
-                {
-                    "title":"Tableau de bord",
-                    "source":"public/images/bloomy_dashboard.png"
-                },
-                {
-                    "title":"Liste des utilisateurs",
-                    "source":"public/images/bloomy_edituser.png"
-                },
-                {
-                    "title":"Formulaire de nouvel utilisateur",
-                    "source":"public/images/bloomy_form.png"
+                    "source":"assets/images/projects/bloomy-fleet/bloomy-details.png"
                 }
             ]
         },
         "second_paragraph":{
-            "title":"",
-            "text":"",
+            "title":"Réalisation",
+            "text":"J'ai développé le front de l'application en Angular et GraphQL pour les appels à la base de données. J'ai appris de zéro Angular, TypeScript et GraphQl pour cette mission, ce qui l'a rendue extrêmement intéressante et bénéfique pour moi. J'ai également pu appliquer ce que j'avais appris en cours plus tôt dans l'année sur les méthodes agiles et les logiciels de gestion de projet tels Jira et ClickUp.",
             "images": [
+                {
+                    "title":"Édition d'un compte utilisateur",
+                    "source":"assets/images/projects/bloomy-fleet/form.png"
+                }
             ]
         },
         "third_paragraph":{
             "title":"",
             "text":"",
             "images": [
+                {
+                    "title":"Tableau de bord",
+                    "source":"assets/images/projects/bloomy-fleet/dashboard.png"
+                }
             ]
         },
         "languages":[
@@ -165,16 +161,24 @@
             "GraphQl"
         ],
         "documents":[
+            {
+                "title":"Rapport de Stage",
+                "source":"assets/images/projects/bloomy-fleet/Rapport de Stage.pdf"
+            }
         ],
         "links":[
+            {
+                "title":"CBA",
+                "link":"https://www.cbainfo.fr/"
+            }
         ]
     },
     {
         "id":5,
         "title":"La Sorcière des Ombres",
         "isFavorite":true,
-       "timeline": "septembre 2025",
-        "description":"Projet réalisé dans le cadre de la GameJam de rentrée en troisième année de BUT. En équipe de 6 nous avons pu développer un jeu en Python autour du thème du Moyen-Age et de la méchanique de jeu de la disparition.",
+        "timeline": "septembre 2025",
+        "description":"Projet réalisé dans le cadre de la GameJam de rentrée en troisième année de BUT. En équipe de 6 nous avons pu développer un jeu en Python autour du thème du Moyen-Âge et de la mécanique de jeu \"apparition / disparition\".",
         "goals":"",
         "first_paragraph":{
             "title":"",
@@ -203,27 +207,31 @@
         ]
     },
     {
-        "id":6,
+        "id":8,
         "title":"Ce Portfolio",
         "isFavorite":true,
-       "timeline": "septembre 2025 - juin 2026",
+        "timeline": "septembre 2025 - juin 2026",
         "description":"Ce portfolio est aussi un projet en lien avec le BUT. Nous avions comme consigne de réaliser un portfolio web professionnel et/ou qui nous représente. Je l'ai réalisé en Angular.",
-        "goals":"",
+        "goals":"Créer un site à mon image pour présenter et mettre en valeur mon travail · M'éclater un maximum",
         "first_paragraph":{
-            "title":"",
-            "text":"",
+            "title":"Restant à faire",
+            "text":"Je souhaiterais encore améliorer ce portfolio en le rendant plus interactif. J'ai comme projet de rajouter des objets, trouvables habituellement sur un bureau, tout autour du carnet. J'aimerai notamment ajouter des penses-bêtes en liens avec mes projets actuel, peut-être même reliés à mon GitHub et mis à jour automatiquement. Je voudrais également ajouter une Une de journal qui présenterais les dernière avancées de mes projets, comme des mises à jour du démineur. Cette Une pourrait permettre de motiver les visiteurs à revenir régulièrement sur mon portfolio (enfin il faudra déjà que qui que soit, autre qu'une IA venue voler mon travail, s'y intéresse).",
             "images": [
             ]
         },
         "second_paragraph":{
-            "title":"",
-            "text":"",
+            "title":"Conception",
+            "text":"Les maquettes initiales présentent une esthétique plus professionnelle en prenant comme inspiration le tableau \"Nuit Étoilée\" de Van Gogh. J'avais choisis ce tableau car il s'agit de l'une de mes œuvres favorites, de plus Van Gogh a longtemps vécu en Provence, ma région natale. J'ai néanmoins décidé de changer la direction artistique du projet afin d'obtenir un rendu qui colle plus à ma personnalité réelle et non à une version lissée pour être \"pro\". Ce choix m'a permis de trouver la motivation d'accomplir pratiquement tout ce que j'avais prévu.",
             "images": [
+                {
+                    "title":"Maquettes",
+                    "source":"assets/images/projects/portfolio/mockups.png"
+                }
             ]
         },
         "third_paragraph":{
-            "title":"",
-            "text":"",
+            "title":"Évolution par rapport au précédent portfolio",
+            "text":"J'aimerais rapidement revenir sur la progression de mes compétences sur cette dernière année. Dans les liens de cette page vous pourrez trouver mon ancien portfolio. Je suis fière de m'être améliorée tant sur le plan technique, que sur la complexité des projets entrepris, ou de l'expression de ma créativité.",
             "images": [
             ]
         },
@@ -235,31 +243,47 @@
         "documents":[
         ],
         "links":[
+            {
+                "title":"Ancien Portfolio",
+                "link":"https://lievrevolant.github.io/portfolio-old/"
+            }
         ]
     },
     {
-        "id":7,
+        "id":6,
         "title":"Tour of Heroes",
         "isFavorite":true,
-       "timeline": "septembre - décembre 2025",
-        "description":"",
-        "goals":"",
+        "timeline": "septembre - décembre 2025",
+        "description":"Réalisé lors du cinquième semestre de BUT, ce projet est basé sur le tutoriel Angular bien connu \"Tour of Heroes\". Ce projet avait pour but de nous faire découvrir Angular. M'étant déjà bien familiarisée au Framework lors de mon stage de deuxième année, j'ai pû revoir consolider mes bases et m'amuser.",
+        "goals":"Découvrir Angular · Découvrir Firestore",
         "first_paragraph":{
             "title":"",
             "text":"",
             "images": [
+                {
+                    "title":"Accueil de l'IndissPlus Launcher",
+                    "source":"assets/images/projects/tour-of-heroes/mockups.png"
+                }
             ]
         },
         "second_paragraph":{
-            "title":"",
+            "title":"Réalisation",
             "text":"",
             "images": [
+                {
+                    "title":"Accueil de l'IndissPlus Launcher",
+                    "source":"assets/images/projects/tour-of-heroes/home.png"
+                }
             ]
         },
         "third_paragraph":{
             "title":"",
             "text":"",
             "images": [
+                {
+                    "title":"Accueil de l'IndissPlus Launcher",
+                    "source":"assets/images/projects/tour-of-heroes/edit-hero.png"
+                }
             ]
         },
         "languages":[
@@ -270,31 +294,47 @@
         "documents":[
         ],
         "links":[
+            {
+                "title":"Tutoriel Tour of Heroes",
+                "link":"https://v17.angular.io/tutorial/tour-of-heroes"
+            }
         ]
     },
     {
-        "id":8,
+        "id":9,
         "title":"IndissPlus Launcher",
         "isFavorite":false,
-       "timeline": "octobre 2025 - août 2026",
-        "description":"",
-        "goals":"",
+        "timeline": "octobre 2025 - août 2026",
+        "description":"IndissPlus Launcher est le projet au cœur de l'alternance que j'ai réalisé chez Corys lors de mon ultime année de BUT. Le service dans lequel j'ai travaillé produit des simulateurs de procédés pour permettre aux usines clientes de former leurs opérateurs. Les formations s'effectue lors de sessions surveillées par des instructeurs. Cette application permet aux instructeurs de mettre en place des séquences d'action à effectuer automatiquement sur les postes de la salle de formation.",
+        "goals":"Corriger et améliorer la base de code existante · Concevoir et développer le mode de suivi d'exécution · Apprendre le C# · Découvrir le MVVM",
         "first_paragraph":{
             "title":"",
             "text":"",
             "images": [
+                {
+                    "title":"Accueil de l'IndissPlus Launcher",
+                    "source":"assets/images/projects/indissplus-launcher/indissplus.png"
+                }
             ]
         },
         "second_paragraph":{
-            "title":"",
-            "text":"",
+            "title":"Refactoring",
+            "text":"Les tâches de refactoring ont été omniprésente tout au long de l'alternance. Le projet étant déjà entamer à mon arrivée j'ai pû apporter un regard neuf sur la base de code. Puisque j'ai découvert et lu le Clean Code au cours de cette année j'ai également pû mettre en pratique directement les conseils que je lisais, et ainsi évaluer leur pertinence sur un projet réel.",
             "images": [
+                {
+                    "title":"Édition d'une séquence",
+                    "source":"assets/images/projects/indissplus-launcher/edition.png"
+                }
             ]
         },
         "third_paragraph":{
-            "title":"",
-            "text":"",
+            "title":"Mode de suivi d'exécution",
+            "text":"Le suivi d'exécution peut se faire depuis deux vues différentes. La conception des maquettes s'est faite simultanément aux fix de bugs.",
             "images": [
+                {
+                    "title":"Suivi d'exécution",
+                    "source":"assets/images/projects/indissplus-launcher/execution.png"
+                }
             ]
         },
         "languages":[
@@ -302,33 +342,53 @@
             "XAML"
         ],
         "documents":[
+            {
+                "title":"Mémoire d'Alternance",
+                "source":"assets/images/projects/indissplus-launcher/Mémoire d'Alternance.pdf"
+            }
         ],
         "links":[
+            {
+                "title":"Corys",
+                "link":"https://www.corys.com/en/"
+            }
         ]
     },
     {
-        "id":9,
+        "id":7,
         "title":"Awesome Minesweeper",
         "isFavorite":true,
-       "timeline": "janvier - avril 2026",
+        "timeline": "janvier - avril 2026",
         "description":"À l'origine un projet de cours pour nous faire découvrir Dart et Flutter. J'ai adoré développer une application que je pouvais lancer sur mon téléphone et partager à mes amis et j'ai donc poursuivi le développement du jeu bien plus loin que ce qui était attendu.",
-        "goals":"Apprendre Dart et Flutter · Développer un projet de la conception au déploiement public",
+        "goals":"Apprendre Dart et Flutter · Découvrir les étapes de déploiement d'un projet · Utiliser les issues GitHub · Assimiler l'utilité des tests unitaires",
         "first_paragraph":{
             "title":"À venir",
-            "text":"Il reste toujours quelques bugs à régler. Une fois la version actuelle solide j'aimerai la déployer officiellement sur le PlayStore. Une fois cela fait, je rajouterai des mises à jour comme l'ajout de thêmes ou de modes multijoueurs.",
+            "text":"Il reste toujours quelques bugs à régler et améliorations à peaufiner. Une fois la version actuelle solide j'aimerai la déployer officiellement sur le PlayStore. Une fois cela fait, je rajouterai des mises à jour comme l'ajout de thèmes ou de modes multijoueurs.",
             "images": [
+                {
+                    "title":"Partie d'Awesome Minesweeper",
+                    "source":"assets/images/projects/minesweeper/minesweeper-game.png"
+                }
             ]
         },
         "second_paragraph":{
             "title":"Conception",
-            "text":"La conception de ce projet a démarré par une phase de maquettage",
+            "text":"La conception de ce projet a eu un début un peu chaotique. En effet j'ai d'abord essayer de me cantonner aux TPs et de me restreindre sur les maquettes, de ne pas m'emballer trop vite. Mais j'ai éventuellement craquer. J'ai très vite décider que je voulais que le jeu puisse avoir un aspect multijoueur, les données de l'application sont hébergées sur Firestore.",
             "images": [
+                {
+                    "title":"Maquettes d'Awesome Minesweeper",
+                    "source":"assets/images/projects/minesweeper/mockups.png"
+                }
             ]
         },
         "third_paragraph":{
             "title":"Réalisation",
-            "text":"",
+            "text":"Il s'agit de mon premier projet ayant vocation à être partagé à des utilisateurs, je prends donc de grandes précautions en rédigeant de nombreux tests unitaires  et en consignant toutes les tâches à faire dans les issues du GitHub.",
             "images": [
+                {
+                    "title":"Issues du projet sur github",
+                    "source":"assets/images/projects/minesweeper/issues.png"
+                }
             ]
         },
         "languages":[

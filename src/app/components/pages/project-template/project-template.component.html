@@ -36,7 +36,7 @@
             <div>
                 <h3>{{ project.second_paragraph.title }}</h3>
                 @if (project.second_paragraph.images.length != 0) {
-                    <div class="div-img float-left rotated-right img-left">
+                    <div class="div-img float-left rotated-left img-left">
                         <img [title]="project.second_paragraph.images[0].title" class="img-picture-medium" [src]="project.second_paragraph.images[0].source">
                     </div>
                 }
@@ -56,10 +56,10 @@
                     <h3>Liens et documents supplémentaires</h3>
                     <div>
                         @for (link of project.links; track link) {
-                            <a [href]="link.link"><img [title]="link.title" [src]="imgSrc.bigYellowStar"/></a>
+                            <a [href]="link.link" target="_blank"><img [title]="link.title" [src]="imgSrc.link"/></a>
                         }
                         @for (doc of project.documents; track doc) {
-                            <a><img [title]="doc.title" [src]="imgSrc.bigBlueStar"/></a>
+                            <a [href]="doc.source" target="_blank"><img [title]="doc.title" [src]="imgSrc.doc"/></a>
                         }
                     </div>
                 </div>
