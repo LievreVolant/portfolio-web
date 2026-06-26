@@ -12,25 +12,34 @@ npm run start
 
 ## Building
 
-To build the project run:
+To build the project locally run:
 
 ```bash
-ng build
+npm run build
 ```
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
+This will compile your project and store the build artifacts in the `dist/` directory.
 
-To build the project for Github Pages run:
+## Deploy to GitHub Pages
+
+Run these commands from the project root:
 
 ```bash
-ng build --output-path docs --base-href /portfolio-web/
+npm run build -- --output-path docs --base-href /portfolio-web/
 npx angular-cli-ghpages --dir=docs/browser --branch=gh-pages
 ```
 
+These commands will:
+
+- build the Angular app for production;
+- output the files into the `docs/browser` folder;
+- publish them to the `gh-pages` branch for GitHub Pages.
+
 GitHub Pages should be configured with:
+
 - Source: Deploy from a branch
-- Branch: gh-pages
-- Folder: / (root)
+- Branch: `gh-pages`
+- Folder: `/ (root)`
 
 ## Running unit tests
 
