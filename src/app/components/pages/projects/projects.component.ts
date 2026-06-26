@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {PageCornersComponent} from '../../shared/page-corners/page-corners.component';
-import {IMG_SRC} from '../../../constants';
+import {PRJ_SRC} from '../../../constants';
 import {RouterLink} from '@angular/router';
 
 @Component({
@@ -13,5 +13,5 @@ import {RouterLink} from '@angular/router';
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
-    readonly imgSrc = IMG_SRC;
+    readonly imgSrc = PRJ_SRC;
 }

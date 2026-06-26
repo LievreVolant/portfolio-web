@@ -3,7 +3,7 @@ import {PageCornersComponent} from '../../shared/page-corners/page-corners.compo
 import {RouterLink} from '@angular/router';
 import projectsData from '../../../data/projects.json';
 import { ProjectData } from '../../../model/project.interface';
-import { IMG_SRC } from '../../../constants';
+import { PRJ_SRC } from '../../../constants';
 
 @Component({
   selector: 'app-summary',
@@ -15,6 +15,6 @@ import { IMG_SRC } from '../../../constants';
   styleUrl: './summary.component.scss',
 })
 export class SummaryComponent {
-    protected readonly imgSrc = IMG_SRC;
+    protected readonly imgSrc = PRJ_SRC;
     projectsData: ProjectData[] = projectsData;
 }

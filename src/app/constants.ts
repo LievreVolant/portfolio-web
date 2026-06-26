@@ -77,7 +77,7 @@ export const ICON_SRC = {
 };
 
 const projectsPath: string = 'assets/images/projects/';
-export const IMG_SRC = {
+export const PRJ_SRC = {
     bigBlueStar: 'assets/images/icons/tabs/star-blue-big.png',
     bigYellowStar: 'assets/images/icons/tabs/star-yellow-big.png',
     coloredStar: 'assets/images/icons/tabs/star-colored.png',
@@ -88,6 +88,20 @@ export const IMG_SRC = {
     shadowWitchCrop: projectsPath + 'shadow-witch/shadow-witch-crop.png',
     darkFeather: 'assets/images/icons/tabs/feather-dark.png',
     darkStar: 'assets/images/icons/tabs/star-dark.png',
+};
+
+const otherPath: string = 'assets/images/other/';
+export const IMG_SRC = {
+    threeDSCollection: otherPath + '3ds.png',
+    appa: otherPath + 'appa.png',
+    bunny: otherPath + 'bunny.png',
+    cleanCode: otherPath + 'clean-code.png',
+    current3DS: otherPath + 'current-3ds.png',
+    littleMe: otherPath + 'little-moi.png',
+    me: otherPath + 'mwa.png',
+    rabbits: otherPath + 'rabbits.png',
+    reciF: otherPath + 'recif.png',
+    smallCreations: otherPath + 'small-creations.png',
 };
 
 const catPath: string = 'assets/images/upia/';
